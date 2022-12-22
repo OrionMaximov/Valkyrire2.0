@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %} {% block stylesheets %}
+{{ encore_entry_link_tags("app") }}
+<link rel="stylesheet" href="{{ asset('assets/css/about.css') }}" />
+
+{% endblock %} {% block body %}
+
+<h2>L'équipe qui à crée ce site merveilleux</h2>
+<div class="bodz">
+  <div class="large">
+    <h3>Chris</h3>
+
+    <div class="taille">
+      <img src="{{ asset('assets/image/batchris.jpg') }}" alt="" />
+      <p>Je suis BATMAN et CELIBATAIRE mais pas ce Week-end</p>
+      <p>Lecteur de comics</p>
+      <p>Chargé du Web-Marketing et Graphiste</p>
+    </div>
+  </div>
+  <div class="large">
+    <h3>Eric</h3>
+    <div class="taille">
+      <img src="{{ asset('assets/image/hameric.jpg') }}" alt="" />
+      <p>Je ne sais pas, appellez moi!</p>
+      <p>Accro aux BD</p>
+      <p>Correcteur type blanco et Créateur de panier</p>
+    </div>
+  </div>
+  <div class="large">
+    <h3>Quentin</h3>
+    <div class="taille">
+      <img src="{{ asset('assets/image/quillin.jpg') }}" alt="" />
+      <p>Coquinou en chef</p>
+      <p>Fana de Mangas</p>
+      <p>Codeur fou avec déséquilibre sur les API</p>
+    </div>
+  </div>
+</div>
+{% endblock %}

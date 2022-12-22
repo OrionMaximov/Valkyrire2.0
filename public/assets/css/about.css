@@ -1,0 +1,29 @@
+.taille{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem auto; 
+}
+h2, h3{
+    text-align: center;
+}
+.taille img{  
+    max-height: 400px;
+    max-width: 250px;
+    width: 100%;
+}
+.bodz{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem auto;
+    width: 94%;
+     
+}
+.large{
+    
+    background-image: url(../image/mangabaniere.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

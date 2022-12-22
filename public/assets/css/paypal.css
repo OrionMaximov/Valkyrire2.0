@@ -1,0 +1,12 @@
+.taille{
+    width: 100%;
+    min-height: 8vh;
+    margin-top: 66%;
+}
+
+
+#paypal-button-container{
+    margin: 1rem auto;
+    width: 20%;
+    
+}

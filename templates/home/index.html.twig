@@ -1,0 +1,57 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+{{ encore_entry_link_tags('app') }}
+<link rel="stylesheet" href="{{asset('assets/css/home.css')}}">
+{% endblock %}
+
+{% block javascripts %}
+    {{ encore_entry_script_tags('app') }}
+    <script src="{{asset('assets/js/mangas.js')}}" defer></script>
+    <script src="{{asset('assets/js/comic.js')}}" defer></script>
+    <script src="{{asset('assets/js/bandeD.js')}}" defer></script> 
+{% endblock %}
+
+
+
+{% block title %}Valkyrie Book Store{% endblock %}
+
+{% block body %}
+
+<div class="banniere">
+    <img src="{{asset('assets/image/valkyrie-high-resolution-logo-black-on-transparent-background.png')}}" alt="" class="logoBanniere">
+</div>
+
+
+<h2>Nos Meilleures ventes</h2>
+
+<div class="carousel1">    
+    <div id="slider">
+        <div id="prev"></div>
+        <div id="next"></div>
+        <img src="" alt="">
+    </div>
+    <div id="slider2">
+        <div id="prev2"></div>
+        <div id="next2"></div>
+        <img src="" alt="">
+    </div>
+    <div id="slider3">
+        <div id="prev3"></div>
+        <div id="next3"></div>
+        <img src="" alt="">
+    </div>
+</div>
+
+
+<h2>Bande Dessinées</h2>
+
+<div class="bandeD"></div>
+<h2>Comic</h2>
+
+<div class="comic"></div>
+<h2>Mangas</h2>
+
+<div class="mangas"></div>
+
+{% endblock %}

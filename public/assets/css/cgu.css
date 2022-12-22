@@ -1,0 +1,28 @@
+#cgu{
+    text-align: justify;
+    justify-self: auto;
+    width: 80%;
+    margin: auto;
+}
+#cgu h2{
+    text-align: center;
+}
+.backTop{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.backTop a{
+    text-decoration: none;
+}
+#condLien{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+#condLien a{
+    width: fit-content;
+    text-decoration: none;
+}
+#condLien :last-of-type{
+    padding-bottom: 1.5rem;
+}
