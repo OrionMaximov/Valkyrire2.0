@@ -1,0 +1,53 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+{{ encore_entry_link_tags('app') }}
+<link rel="stylesheet" href="{{asset('assets/css/login.css')}}">
+{% endblock %}
+
+{% block title %}Log in!{% endblock %}
+
+{% block body %}
+<div id="login" class="divForm">
+    <form method="post">
+        {% if error %}
+        <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+        {% endif %}
+
+        
+        <div id="formAlign">
+            <h1 class="h3 mb-3 font-weight-normal">Connectez-vous</h1>
+            <label for="inputEmail">Email</label>
+            <input type="email" value="{{ last_username }}" name="email" id="inputEmail" 
+                autocomplete="email" required autofocus>
+            <label for="inputPassword">Mot de passe</label>
+            <input type="password" name="password" id="inputPassword" 
+                autocomplete="current-password" required>
+
+            <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
+
+
+            {#  Uncomment this section and add a remember_me option below your firewall to activate remember me functionality.
+        See https://symfony.com/doc/current/security/remember_me.html #}
+
+
+
+            <button class="btn btn-success" type="submit">
+                Connexion
+            </button>
+            <button class="btn btn-success" type="submit">
+                <a href="{{path('app_register')}}">Pas encore de compte ?</a>
+            </button>
+            <button class="btn btn-dark"><a href="{{path('app_forgot_password_request')}}">Mot de passe oublié ?</a></button>
+        </div>
+    </form>
+    <div class="agreeTerms">
+    <div class="checkbox mb-3">
+        <label>
+             Se souvenir de mon humble personne ?
+        </label><input type="checkbox" name="_remember_me">
+    </div>
+</div>
+</div>
+
+{% endblock %}

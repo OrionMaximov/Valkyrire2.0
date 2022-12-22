@@ -1,0 +1,53 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+{{ encore_entry_link_tags('app') }}
+<link rel="stylesheet" href="{{asset('assets/css/login.css')}}">
+{% endblock %}
+
+{% block title %}Inscription{% endblock %}
+
+{% block body %}
+<div class="divForm">
+    {% for flash_error in app.flashes('verify_email_error') %}
+        <div class="alert alert-danger" role="alert">{{ flash_error }}</div>
+    {% endfor %}
+
+    <h1>Inscription</h1>
+
+    {{ form_start(registrationForm) }}
+        {{ form_row(registrationForm.nom) }}
+        {{ form_row(registrationForm.prenom) }}
+        {{ form_row(registrationForm.email) }}
+        {{ form_row(registrationForm.adresse) }}
+        {{ form_row(registrationForm.ville) }}
+        {{ form_row(registrationForm.codePostale, {
+            label: 'Code postal'
+        }) }}
+        {{ form_row(registrationForm.telephone, {
+            label:'Téléphone'
+        }) }}
+        {{ form_row(registrationForm.birthat, {
+            label: 'Date de naissance'
+        }) }}
+        {{ form_row(registrationForm.plainPassword, {
+            label: 'Mot de passe'
+        }) }}
+        {{ form_row(registrationForm.confirmPassword, {
+            label: 'Confirmez le mot de passe'
+        }) }}
+        
+
+        <button type="submit" class="btn btn-success" >
+            Inscription
+        </button>
+        <button type="submit" class="btn btn-success" >
+          <a href="{{path('app_login')}}">Déjà inscrit ?</a>  
+        </button>
+</div>
+    <div class="agreeTerms">
+        {{ form_row(registrationForm.agreeTerms) }}
+    </div>
+    {{ form_end(registrationForm) }}
+    
+{% endblock %}

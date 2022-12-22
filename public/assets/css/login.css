@@ -1,0 +1,50 @@
+body{
+    min-height: 150vh;
+}
+#login{
+    width: 80%;
+    margin: 1rem auto;
+    min-height: 100vh;
+}
+.divForm{
+    width: 60%;
+    margin: 1rem auto;
+}
+.divForm input, .divForm textarea,.divForm select {
+    width: 100%;
+    border-radius: 10px;
+}
+.divForm button{
+    margin: 1rem 1rem;
+    color: white;
+    text-decoration: none;
+}
+.divForm button a{
+    color: white;
+    text-decoration: none;
+}
+#registration_form_agreeTerms{
+    z-index: 1;
+    background-color: aliceblue;
+    margin: auto 1rem;
+}
+.agreeTerms{
+    background-color: aliceblue;
+    color: black;
+    z-index: 1;
+    width: 60%;
+    margin: 1rem auto;
+}
+.checkbox{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: left;
+}
+.checkbox input{
+    width: 05%;
+}
+#formAlign{
+    padding-top: 25%;
+}
+

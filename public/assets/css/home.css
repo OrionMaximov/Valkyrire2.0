@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.banniere{
+    background-image: url(../image/mangabaniere.jpg);
+    height: 65vh; /* verifié pour le responsive si l'on reduit a 50vh*/
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    
+
+}
+
+.logoBanniere{
+    height: 20rem;
+    width: auto; 
+    object-fit: cover;
+    object-position: 100% 0;
+}
+.carousel1 {
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(211, 211, 211);
+    
+}
+
+.carousel1 img{
+    max-height: 400px;
+    width: auto;
+}
+
+
+#slider {
+    position: relative;
+}
+
+#prev,
+#next {
+    position: absolute;
+    color: white;
+    font-weight: 900;
+    font-size: 3rem;
+    top: 50%;
+}
+#prev:hover, #next:hover{
+    cursor: pointer;
+}
+#prev {
+    left: 0;
+}
+
+#next {
+    right: 0;
+}
+
+h2{
+    color: white;
+    background-color: #C46D00;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    
+}
+.baci{
+    height: 50vh;
+    width: 100%;
+    background-image: url(../image/noustevoyons.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.full{
+    height: 60vh;
+    background-color: #000;
+}
+.baci a{
+    text-decoration: none;
+    color: white;
+    border: 3px;
+    border-color: blue;
+}
+#red{
+    background-color: red;
+}
+#green{
+    background-color: green;
+}
+
+.bandeD,.mangas,.comic{
+    margin-bottom: 2rem;   
+}
+.bandeD img,.comic img,.mangas img {
+   height: 400px;
+   width: auto;
+}
+

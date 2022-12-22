@@ -1,0 +1,561 @@
+{% extends 'base.html.twig' %}
+{% block stylesheets %}
+{{ encore_entry_link_tags('app') }}
+<link rel="stylesheet" href="{{asset('assets/css/cgu.css')}}">
+
+{% endblock %}
+{% block title %}C.G.U{% endblock %}
+
+{% block body %}
+<div id="cgu">
+    <h2>CONDITIONS D'UTILISATION ET GENERALES DE VENTE</h2>
+    <p> Bienvenue sur Valkyrie.fr.
+        Valkyrie SARL vous fournit des fonctionnalités de site internet et d'autres produits et services quand vous
+        visitez le site internet Valkyrie.fr (le « site internet »), effectuez des achats sur le site Internet. Veuillez
+        consulter notre Notice Protection de vos Informations Personnelles, notre Notice Cookies pour comprendre comment
+        nous collectons et traitons vos informations personnelles dans le cadre des Services Valkyrie. Valkyrie fournit
+        les Services Valkyrie et vend des produits selon les conditions définies sur cette page. Valkyrie.fr est le nom
+        commercial utilisé par Valkyrie.
+    </p>
+    <div id="condLien">
+        <a href="#utilisation">Conditions d'utilisation</a>
+        <a href="#vente">Conditions Générales de Vente</a>
+        <a href="#notif">Formulaire de notification</a>
+    </div>
+    <div id="condUse">
+        <h3 id="utilisation">CONDITIONS D'UTILISATION</h3>
+        <p> Merci de lire ces conditions attentivement avant d'utiliser les Services Valkyrie. En utilisant les Services
+            Valkyrie, vous acceptez d'être soumis aux présentes conditions. Nous offrons un large panel de Services
+            Valkyrie et il se peut que des conditions additionnelles s'appliquent. Quand vous utilisez un Service
+            Valkyrie (par exemple, Votre Profil, les Chèques-Cadeaux), vous êtes aussi soumis aux termes, lignes
+            directrices et conditions applicables à ce Service Valkyrie (« Conditions du Service »). Si ces Conditions
+            d'Utilisation entrent en contradiction avec ces Conditions du Service, les Conditions du Service
+            prévaudront.
+            Procédure et formulaire de notification de violation de droits.
+            Procédure et Formulaire de notification en vue de notifier un contenu injurieux ou diffamatoire.
+        </p>
+        <h4>1. COMMUNICATIONS ELECTRONIQUES</h4>
+        <p> Quand vous utilisez un quelconque Service Valkyrie ou que vous nous envoyez des courriers électroniques, SMS
+            ou autres communications depuis vos équipements fixes ou mobiles, vous communiquez avec nous
+            électroniquement. Nous communiquerons avec vous électroniquement par divers moyens, tels que par courrier
+            électronique, SMS, messages de notification dans l'application ou en postant des courriers électroniques ou
+            des communications sur le site internet ou à travers les autres Services Valkyrie, tels que notre
+            Gestionnaire de communication. A des fins contractuelles, vous acceptez que tous les accords, informations,
+            divulgations et autres communications que nous vous enverrons électroniquement remplissent toutes les
+            obligations légales des communications par écrit, à moins qu'une loi impérative spécifique impose un autre
+            mode de communication.
+        </p>
+        <h4>2. RECOMMANDATIONS ET PERSONNALISATION</h4>
+        <p> Dans le cadre des Services Valkyrie, nous vous recommanderons des fonctionnalités, des produits et des
+            services, comprenant des publicités de tiers, qui sont susceptibles de vous intéresser, nous identifierons
+            vos préférences et nous personnaliserons votre expérience.
+        </p>
+        <h4>3. PROPRIETE INTELLECTUELLE, DROIT D'AUTEUR, ET PROTECTION DES BASES DE DONNEES
+        </h4>
+        <p> Tout le contenu présent ou rendu disponible à travers les Services Valkyrie, tels que les textes, les
+            graphiques, les logos, les boutons, les images, les morceaux de musique, les téléchargements numériques, et
+            les compilations de données, est la propriété de Valkyrie, de ses sociétés affiliées ou de ses fournisseurs
+            de contenu et est protégé par le droit luxembourgeois et international de la propriété intellectuelle,
+            d'auteur et de protection des bases de données. La compilation de tout le contenu présent ou rendu
+            disponible à travers les Services Valkyrie est la propriété exclusive d'Valkyrie et est protégé par le droit
+            luxembourgeois et international de la propriété intellectuelle et de protection des bases de données.
+            Vous ne devez pas extraire et/ou réutiliser de façon systématique des parties du contenu de tout Service
+            Valkyrie sans notre autorisation expresse et écrite. En particulier, vous ne devez pas utiliser de robot
+            d'aspiration de données, ou tout autre outil similaire de collecte ou d'extraction de données pour extraire
+            (en une ou plusieurs fois), pour réutiliser une partie substantielle d'un quelconque Service Valkyrie, sans
+            notre accord express et écrit. Vous ne devez pas non plus créer et/ou publier vos propres bases de données
+            qui comporteraient des parties substantielles (ex : nos prix et nos listes de produits) d'un Service
+            Valkyrie sans notre accord express et écrit.
+        </p>
+        <h4>4. MARQUES DEPOSEES</h4>
+        <p> Consultez une liste non exhaustive des marques déposées par Valkyrie. Par ailleurs, les graphiques, logos,
+            en-têtes de page, boutons, scripts et noms de services inclus ou rendus disponibles à travers un Service
+            Valkyrie sont des marques ou visuels de Valkyrie. Les marques et visuels de Valkyrie ne peuvent pas être
+            utilisés pour des produits ou services qui n'appartiennent pas à Valkyrie, ou d'une quelconque manière qui
+            pourrait provoquer une confusion parmi les clients, ou d'une quelconque manière qui dénigre ou discrédite
+            Valkyrie. Toutes les autres marques qui n'appartiennent pas à Valkyrie et qui apparaissent sur un quelconque
+            Service Valkyrie sont la propriété de leurs propriétaires respectifs, qui peuvent, ou non, être affiliés,
+            liés ou parrainés par Valkyrie.
+        </p>
+        <h4>5. BREVETS</h4>
+        <p> Un ou plusieurs brevets détenus par Valkyrie s'appliquent aux Services Valkyrie, à ce site internet et aux
+            fonctionnalités et services accessibles via le site internet et les Services Valkyrie. Des parties de ce
+            site internet fonctionnent sous licences d'un ou plusieurs brevets. Consultez une liste non exhaustive des
+            brevets détenus par Valkyrie et des licences de brevets applicables.
+        </p>
+        <h4>6. LICENCE ET ACCES</h4>
+        <p> Sous réserve du respect des présentes Conditions d'Utilisation et des Conditions des Services et du paiement
+            de tous les sommes applicables, Valkyrie ou ses fournisseurs de contenu vous accorde une licence limitée,
+            non exclusive, non transférable, non sous licenciable pour l'accès et à l'utilisation personnelle et non
+            commerciale des Services Valkyrie. Cette licence n'inclut aucun droit d'utilisation d'un Service Valkyrie ou
+            de son contenu pour la vente ou tout autre utilisation commerciale ; de collecte et d'utilisation d'un
+            listing produit, descriptions, ou prix de produits ; de toute utilisation dérivée d'un Service Valkyrie ou
+            de son contenu ; de tout téléchargement ou copie des informations d'un compte pour un autre commerçant ; ou
+            de toute utilisation de robot d'aspiration de données, ou autre outil similaire de collecte ou d'extraction
+            de données.
+            Tous les droits qui ne vous ont pas été expressément accordés dans ces Conditions d'Utilisation ou dans les
+            Conditions d'un Service sont réservés et restent à Valkyrie ou à ses licenciés, fournisseurs, éditeurs,
+            titulaires de droits, ou tout autre fournisseur de contenu. Aucun Service Valkyrie ou tout ou partie de
+            celui-ci ne doit être reproduit, copié, vendu, revendu, visité ou exploité pour des raisons commerciales
+            sans notre autorisation expresse et écrite.
+            Vous ne devez pas cadrer ou utiliser des techniques de cadrage (framing) pour insérer toute marque, logo ou
+            autre information commerciale (y compris des images, textes, mises en pages ou formes) de Valkyrie sans
+            notre autorisation expresse et écrite. Vous ne devez pas utiliser de méta tags ou tout autre « texte caché »
+            utilisant le nom ou les marques déposées de Valkyrie sans notre autorisation expresse et écrite.
+            Vous ne devez pas faire un mauvais usage d'un Service Valkyrie. Vous devez utiliser les Services Valkyrie
+            comme autorisé par la loi. Les licences accordées par Valkyrie prendront fin si vous ne respectez pas ces
+            Conditions d'Utilisation ou les Conditions des Services.
+        </p>
+        <h4>7. VOTRE COMPTE</h4>
+        <p> Vous pouvez avoir besoin d'un compte personnel Valkyrie pour utiliser certain Services Valkyrie, et il peut
+            vous être demandé de vous connecter au compte et d'avoir une méthode de paiement valide associée à celui-ci.
+            En cas de problème pour utiliser la méthode de paiement que vous avez sélectionnée, nous pourrons utiliser
+            toute autre méthode de paiement valide associée à votre compte. Accédez à Votre compte pour gérer vos
+            options de paiement.
+            Si vous utilisez un quelconque Service Valkyrie, vous êtes responsable du maintien de la confidentialité de
+            votre compte et mot de passe, des restrictions d'accès à votre ordinateur et autres équipements, et dans la
+            limite de ce qui est autorisé par la loi applicable, vous acceptez d'être responsable de toutes les
+            activités qui ont été menées depuis de votre compte ou avec votre mot de passe. Vous devez prendre toutes
+            les mesures nécessaires pour vous assurer que votre mot de passe reste confidentiel et sécurisé, et devez
+            nous informer immédiatement si vous avez des raisons de croire que votre mot de passe est connu de quelqu'un
+            d'autre, ou si le mot de passe est utilisé ou susceptible d'être utilisé de manière non autorisée. Vous êtes
+            responsable de la validité et du caractère complets des informations que vous nous avez fournies, et devez
+            nous informer de tout changement concernant ces informations. Vous pouvez accéder à vos informations dans la
+            section Votre compte du site internet.
+            Vous ne devez pas utiliser un quelconque Service Valkyrie : (I) d'une façon qui causerait, ou serait
+            susceptible de causer une interruption, un dommage, ou une altération d'un Service Valkyrie, ou (II) dans un
+            but frauduleux, ou en relation avec un crime ou une activité illégale, ou (III) dans le but provoquer des
+            troubles, nuisances ou causes d'anxiétés.
+            Nous nous réservons le droit de refuser de fournir un quelconque Service Valkyrie ou de clôturer les comptes
+            si votre comportement nous donne une raison justifiée de le faire. Ce sera notamment le cas si vous
+            enfreignez les lois applicables, les dispositions contractuelles applicables, nos lignes directrices ou nos
+            politiques, toutes accessibles depuis le site internet. Nonobstant une telle limitation ou résiliation, vous
+            continuerez à avoir accès au contenu et aux services que vous avez achetés jusqu'à ce moment-là.
+        </p>
+        <h4>8. COMMENTAIRES, CRITIQUES, COMMUNICATIONS ET AUTRE CONTENU</h4>
+        <p> Les visiteurs peuvent mettre en ligne des revues, des commentaires ou tout autre contenu ; envoyer des
+            cartes électroniques ou autres communications, et soumettre des suggestions, des idées, des questions ou
+            toute autre information tant que ce contenu n'est pas illégal, obscène, abusif, menaçant, diffamatoire,
+            calomnieux, contrevenant aux droits de propriété intellectuelle, ou préjudiciable à des tiers ou
+            répréhensible et ne consiste pas ou ne contient pas de virus informatiques, de militantisme politique, de
+            sollicitations commerciales, de chaînes de courriers électroniques, de mailing de masse ou toute autre forme
+            de « spam ». Vous ne devez pas utiliser une fausse adresse e-mail, usurper l'identité d'une personne ou
+            d'une entité, ni mentir sur l'origine d'une carte de crédit ou d'un contenu. Nous nous réservons le droit
+            (sans aucune obligation en l'absence d'un Formulaire de Notification valide), de retirer ou de modifier tout
+            contenu. Si vous pensez qu'un contenu ou une annonce de vente sur un quelconque Service Valkyrie contient un
+            message diffamatoire, ou que vos droits de propriété intellectuelle ont été enfreints par un article ou une
+            information sur le site internet, merci de nous le notifier en complétant le Formulaire de Notification
+            adéquat, et nous y répondrons.
+            Si vous publiez des commentaires clients, , des questions / réponses ou tout autre contenu généré par vous
+            pour être publié sur le site internet (incluant toute image, vidéo ou enregistrement audio, ensemble le «
+            contenu ») , vous accordez à Valkyrie, (I) une licence non-exclusive et gratuite pour utiliser, reproduire,
+            , publier, rendre disponible, traduire et modifier ce contenu dans le monde entier(incluant le droit de
+            sous-licencier ces droits à des tiers); et (b) le droit d'utiliser le nom que vous avez utilisé en lien avec
+            ce contenu. Aucuns droits moraux ne sont transférés par l'effet de cette clause.
+            Vous pouvez supprimer votre contenu de la vue du public ou, lorsque cette fonctionnalité est offerte,
+            modifier les paramètres pour qu'il ne soit visible que par les personnes auxquelles vous en avez donné
+            l'accès. Vous déclarez et garantissez être propriétaire ou avoir les droits nécessaires sur le contenu que
+            vous publiez ; que, à la date de publication du contenu ou du matériel : (I) le contenu et le matériel est
+            exact, (II) l'utilisation du contenu et du matériel que vous avez fourni ne contrevient pas à l'une des
+            procédures ou lignes directrices d'Valkyrie et ne portera pas atteinte à toute personne physique ou morale
+            (notamment que le contenu ou le matériel ne sont pas diffamatoires). Vous acceptez d'indemniser Valkyrie en
+            cas d'action d'un tiers contre Valkyrie en lien avec le contenu ou le matériel que vous avez fourni, sauf
+            dans le cas où l'éventuelle responsabilité d'Valkyrie pourrait être recherchée pour ne pas avoir retiré un
+            contenu dont le caractère illicite lui aurait été notifié (Formulaire de Notification), dès lors que cette
+            action aurait pour cause, fondement ou origine le contenu que vous nous avez communiqué.
+        </p>
+        <h4>9. REVENDICATIONS DE PROPRIETE INTELLECTUELLE</h4>
+        <p> Valkyrie respecte la propriété intellectuelle d'autrui. Si vous pensez qu'un de vos droits de propriété
+            intellectuelle a été utilisé d'une manière qui puisse faire naître une crainte de violation desdits droits,
+            merci de suivre notre Procédure et formulaire de notification de violation de droits.
+        </p>
+        <h4>10. NOTRE RESPONSABILITE</h4>
+        <p> Nous ferons de notre mieux pour assurer la disponibilité des Services Valkyrie et que les transmissions se
+            feront sans erreurs. Toutefois, du fait de la nature d'internet, ceci ne peut être garanti. De plus, votre
+            accès aux Services Valkyrie peut occasionnellement être suspendu ou limité pour permettre des réparations,
+            la maintenance, ou ajouter une nouvelle fonctionnalité ou un nouveau service. Nous nous efforcerons de
+            limiter la fréquence et la durée de ces suspensions ou limitations.
+            Dans le cadre de ses relations avec des professionnels, Valkyrie n'est pas responsable (I) des pertes qui
+            n'ont pas été causées par une faute de notre part, ou (II) des pertes commerciales (y compris les pertes de
+            profit, bénéfice, contrats, économies espérées, données, clientèle ou dépenses superflues), ou (III) toute
+            perte indirecte ou consécutive qui n'étaient pas prévisibles par vous et nous quand vous avez commencé à
+            utiliser le Service Valkyrie.
+            Nous ne serons pas tenus pour responsables des délais ou de votre impossibilité à respecter vos obligations
+            en application de ces conditions si le délai ou l'impossibilité résulte d'une cause en dehors de notre
+            contrôle raisonnable. Cette condition n'affecte pas votre droit légal de recevoir les produits envoyés et
+            les services fournis dans un temps raisonnable ou de recevoir un remboursement si les produits ou les
+            services commandés ne peuvent être délivrés dans un délai raisonnable en raison d'une cause hors de notre
+            contrôle raisonnable.
+            Les lois de certains pays ne permettent pas certaines des limitations énumérées ci-dessus. Si ces lois vous
+            sont applicables, tout ou partie de ces limitations ne vous sont pas applicables, et vous pouvez disposer de
+            droits supplémentaires.
+            Rien dans ces conditions ne vise à limiter ou n'exclure notre responsabilité en cas de dol, ou en cas de
+            décès ou de préjudice corporel causé(e) par notre négligence ou une faute lourde.
+        </p>
+        <h4>11. DROIT APPLICABLE</h4>
+        <p> Les présentes Conditions d'utilisation sont soumises au droit français (à l'exception de ses dispositions
+            concernant les conflits de loi), et l'application de la Convention de Vienne sur les contrats de vente
+            internationale de marchandises est expressément exclue. Si vous êtes un consommateur et que votre résidence
+            habituelle est située dans un pays de l'Union européenne, vous bénéficiez également de droits vous
+            protégeant en vertu des dispositions obligatoires de la loi applicable dans votre pays de résidence. Vous,
+            comme nous, acceptons de soumettre tous les litiges occasionnés par la relation commerciale existant entre
+            vous et nous à la compétence non exclusive des juridictions de la ville de Dieppe, ce qui signifie que pour
+            l'application des présentes Conditions d'utilisation, vous pouvez intenter une action pour faire valoir vos
+            droits de consommateur, en France ou dans le pays de l'Union européenne dans lequel vous résidez. La
+            Commission européenne met à disposition une plateforme en ligne de résolution des différends à laquelle vous
+            pouvez accéder ici: https://ec.europa.eu/consumers/odr/. Si vous souhaitez attirer notre attention sur un
+            sujet, merci de nous contacter.
+        </p>
+        <h4>12. CONTROLES A L'EXPORTATION</h4>
+        <p> Vous acceptez de ne pas exporter, réexporter ou transférer tous produits (y compris les logiciels ou autres
+            produits numériques) que vous avez achetés sur le site internet vers un pays, à un individu, une société,
+            une organisation ou une entité pour lesquels une telle exportation est limitée ou interdite par la loi. Par
+            exemple, les sanctions économiques et les embargos imposés par l'Union européenne, les Nations Unies, les
+            départements d'État, du Trésor ou du Commerce des États-Unis et par d'autres autorités gouvernementales
+            (tels que les embargos imposés à des pays spécifiques ou les sanctions économiques imposées à des individus
+            ou des sociétés pour des infractions de terrorisme ou de blanchiment d'argent) peuvent vous interdire
+            d'emporter des produits dans d'autres pays, même pour votre usage personnel, et/ou d'envoyer des produits
+            (que ce soit physiquement par courrier ou numériquement par courrier électronique ou par partage de
+            fichiers) à des individus, sociétés, organisations ou entités particuliers. En outre, vous acceptez de ne
+            pas acheter de produits ou de services sur le site internet si vous êtes soumis à des mesures restrictives
+            (sanctions).
+        </p>
+        <h4>13. MODIFICATION DU SERVICE OU DES CONDITIONS D'UTILISATION</h4>
+        <p> Nous nous réservons le droit de faire des modifications sur tout Service Valkyrie, à nos procédures, à nos
+            termes et conditions, y compris les présentes Conditions d'utilisation à tout moment. Vous êtes soumis aux
+            termes et conditions, procédures et Conditions d'utilisation en vigueur au moment où vous utilisez le
+            Service Valkyrie. Si une stipulation de ces Conditions d'utilisation est réputée non valide, nulle, ou
+            inapplicable, quelle qu'en soit la raison, cette stipulation sera réputée divisible et n'affectera pas la
+            validité et l'opposabilité des stipulations restantes.
+        </p>
+        <h4>14. RENONCIATION</h4>
+        <p> Si vous enfreignez ces Conditions d'utilisation et que nous ne prenons aucune action, nous serions toujours
+            en droit d'utiliser nos droits et voies de recours dans toutes les autres situations où vous violeriez ces
+            Conditions d'utilisation.
+        </p>
+        <h4>15. MINEURS</h4>
+        <p> Nous vendons des produits interdits aux mineurs. Si vous avez moins de 18 ans, vous ne pouvez utiliser un
+            Service Valkyrie que sous la surveillance d'un parent ou d'un tuteur. Les offres de produits contenant du
+            contenu destinées à des personnes majeures. Vous devez avoir au moins 18 ans pour acheter des produits
+            contenant du contenu destinées à des personnes majeures.
+        </p>
+        <h4>16. NOS COORDONNEES</h4>
+        <p> Le site internet Valkyrie.fr appartient à, et sa maintenance est effectuée par, Valkyrie SARL. Des
+            conditions spécifiques d'utilisation et de vente pour d'autres Services Valkyrie, peuvent être trouvées sur
+            le site internet.
+            Pour Valkyrie SARL :
+            Succursale en France : Valkyrie SARL, succursale française, Valkyrie Sarl, 666 rue thiers, 76200 Dieppe, 
+            France Enregistrée en France Immatriculation au RCS, numéro : 123456789 R.C.S. Nanterre Numéro de TVA
+            intracommunautaire : FR 12345678910
+            Vous pouvez également nous contacter via notre service client et nous pourrons vous joindre par e-mail ou
+            par téléphone.
+        </p>
+        <h4>17. PROCEDURE ET FORMULAIRE DE NOTIFICATION DE VIOLATION DE DROITS</h4>
+        <p> Si vous pensez que vos droits ont été violés et que vous êtes éligible aux Registre des Marques, veuillez
+            vous inscrire au service et soumettre votre plainte via le Registre des Marques. Sinon, merci d'utiliser
+            notre Formulaire de Notification. Ce formulaire peut être utilisé pour nous soumettre toute sorte de plainte
+            de propriété intellectuelle y compris, sans toutefois s'y limiter, les plaintes liées aux droits d'auteur,
+            de marques, de dessins et modèles et de brevets. Dès réception d'un Formulaire de Notification, nous pouvons
+            prendre certaines mesures, notamment la suppression d'informations ou d'un article et mettre fin aux
+            infractions répétées dans des circonstances appropriées. Ces mesures seront toutefois prises sous toutes
+            réserves, sans reconnaissance de notre part d'une responsabilité quelconque et sans préjudice de l'exercice
+            de nos droits, actions et moyens de défense. Ceci comprend également le transfert de ce formulaire aux
+            parties concernées par l'infraction alléguée. Vous acceptez d'indemniser Valkyrie contre toute réclamation
+            de tiers contre Valkyrie, découlant de, ou dans le cadre de cette notification.
+            Définition d'ASIN et de ISBN-10 : « ASIN » signifie Valkyrie Standard Item (or Identification) Number
+            (Numéro d'identification ou d'article standard d'Valkyrie) et est un identifiant composé de dix (10)
+            caractères. Ce numéro figure dans toute fiche descriptive d'un produit sous le titre « Détails sur le
+            produit ». « ISBN-10 » signifie International Standard Book Number (Numéro de livre standard international)
+            et est un identifiant composé de dix (10) chiffres figurant sur certaines fiches descriptives de livres dans
+            la catégorie « Détails sur le produit ».
+            Avertissement important : fournir des informations inexactes, trompeuses ou fausses dans un Formulaire de
+            Notification adressé à Valkyrie engage sa responsabilité civile et/ou pénale. En cas de doute, veuillez
+            contacter un conseiller juridique.
+            Formulaire de notification : Si vous souhaitez nous notifier la violation de vos droits en relation avec une
+            offre de produit disponible sur le site www.Valkyrie.fr, nous vous invitons à remplir le Formulaire de
+            notification disponible en cliquant sur le lien ci-dessous :
+            Formulaire de Notification
+        </p>
+        <h4>18. PROCEDURE ET FORMULAIRE DE NOTIFICATION EN VUE DE NOTIFIER UN CONTENU INJURIEUX OU DIFFAMATOIRE</h4>
+        <p> Parce que des millions de produits sont listés et que des milliers de commentaires sont hébergés sur
+            Valkyrie.fr, il ne nous est pas possible de connaître le contenu de tous les produits offerts à la vente, ou
+            de tous les commentaires ou critiques qui sont affichés. En conséquence, nous opérons sous un système de «
+            notice and action » soit « notifier et action ». Si vous pensez qu'un contenu ou une annonce de vente sur le
+            site internet contient un message diffamatoire, merci de nous le notifier immédiatement en complétant la
+            Procédure et le Formulaire de notification en vue de notifier un contenu injurieux ou diffamatoire. Suivez
+            les instructions dans le formulaire de la Notification.
+
+            Avertissement important : fournir des informations inexactes, trompeuses ou fausses dans la Notification
+            adressée à Valkyrie peut engager votre responsabilité civile et/ou pénale.
+
+            La procédure de notification : Merci de nous envoyer le formulaire ci-dessous, dûment rempli et signé, à
+            l'adresse suivante : Département juridique, NTD, Valkyrie SARL, 666 rue thiers, 76200 Dieppe, France.
+        </p>
+        <p id="notif"> Formulaire de notification :
+
+            D E C L A R A T I O N
+
+            Je soussigné, Nom et prénom : ____________________________________________________________________________
+            Nom Société : ______________________________________________________________________________ Adresse et
+            Adresse e-mail : ___________________________________________________________________ Numéro de téléphone
+            (SUR LEQUEL VOUS POUVEZ ETRE JOINT DURANT LA JOURNEE) : ___________________________
+
+            Déclare sur l'honneur ce qui suit : 1. Je fais référence au site www.Valkyrie.fr. Ce dernier affiche ou
+            contribue à l'affichage de commentaires injurieux ou diffamatoires à mon sujet. 2. Les propos injurieux ou
+            diffamatoires (RAYEZ LE PARAGRAPHE INUTILE) : (a) apparaissent dans un livre vendu sur le site
+            www.Valkyrie.fr :
+
+            Titre du livre et auteur :______________________________________________________________
+            Numéro ASIN (1) ou ISBN-13 (2) du livre : ____________________________________________________
+            Numéro(s) de la (des) page(s) qui comporterai(en)t des propos diffamatoires :
+            __________________________________________________________________________________
+            (b) apparaissent sur le site www.Valkyrie.fr à l'adresse suivante: _______________________ (ADRESSE EXACTE
+            DE LA PAGE WEB) (b.1.) Les propos que je considère comme INJURIEUX sont les suivants (VEUILLEZ REPRODUIRE
+            LES PROPOS EXACTS DONT VOUS VOUS PLAIGNEZ) :
+            _________________________________________________________________________________________ (b.2.) Ces propos
+            sont injurieux car (VEUILLEZ EXPLIQUER LA RAISON POUR LAQUELLE VOUS CONSIDEREZ CES PROPOS COMME INJURIEUX) :
+            _________________________________________________________________________________________ (b.3.) Les propos
+            que je considère comme DIFFAMATOIRES sont les suivants (VEUILLEZ REPRODUIRE LES PROPOS EXACTS DONT VOUS VOUS
+            PLAIGNEZ) : _____________________________________________________________________________________ (b.4.) Ces
+            propos sont diffamatoires car (VEUILLEZ EXPLIQUER LA RAISON POUR LAQUELLE VOUS CONSIDEREZ CES PROPOS COMME
+            DIFFAMATOIRES) : _____________________________________________________________________________________ 3. Je
+            reconnais que la présente déclaration peut être produite au cours de toute procédure judiciaire découlant
+            des, ou dans le cadre des, propos injurieux et diffamatoires contre lesquels je porte plainte.
+
+            Déclaration de vérité Je déclare que les faits déclarés ci-dessus sont exacts.
+
+            Signature, Lieu, Date: _____________________________ __________________________________
+
+            (1) « ASIN » signifie « Valkyrie Standard Item (or Identification) Number » (Numéro d'identification ou
+            d'article standard d'Valkyrie) et représente un identifiant propre à Valkyrie.fr composé de dix (10)
+            caractères. Ce numéro figure dans toute fiche descriptive d'un produit sous le titre « Détails sur le
+            produit ».
+
+            (2) « ISBN-10 » signifie « International Standard Book Number » (Numéro de livre standard international) et
+            est un identifiant composé de dix (10) chiffres figurant sur certaines fiches descriptives de livres dans la
+            catégorie « Détails sur le produit ».
+        </p>
+    </div>
+<div class="backTop"><a href="#cgu">Retour en haut de la page</a></div>
+    <div id="condVente">
+        <h3 id="vente">CONDITIONS GENERALES DE VENTE</h3>  
+        
+        <p> Bienvenue sur le site Valkyrie.fr.
+            Valkyrie SARL vous fournit des fonctionnalités de site internet et d'autres produits et services quand vous
+            visitez ou achetez sur le site internet Valkyrie.fr (le « Site Internet »), utilisez des produits et
+            services de Valkyrie. Valkyrie fournit les Services Valkyrie selon les conditions définies dans cette page.
+            Ces Conditions Générales de Vente régissent la vente de produits entre Valkyrie SARL et vous. Par ailleurs,
+            lorsque vous utilisez un Service Valkyrie (par exemple votre Profil...), vous êtes
+            également soumis aux termes, lignes directrices et conditions applicables à ce Service Valkyrie (les «
+            Conditions du Service »). Si ces Conditions Générales de Ventes entrent en contradiction avec les Conditions
+            du Service, les Conditions du Service prévaudront.
+            Merci de lire ces conditions attentivement avant d'effectuer une commande avec Valkyrie SARL. En commandant
+            avec Valkyrie SARL, vous nous notifiez votre accord d'être soumis aux présentes conditions.
+        </p>
+        <h4>1. COMMENT COMMANDER</h4>
+        <p> Si vous souhaitez acheter un ou plusieurs produit(s) figurant sur le Site Internet, vous devez sélectionner
+            chaque produit que vous souhaitez acheter et l'ajouter à votre panier. Lorsque vous avez sélectionné tous
+            les produits que vous voulez acheter, vous pouvez confirmer le contenu de votre panier et passer la
+            commande.
+            A ce stade, vous serez redirigé vers une page récapitulant les détails des produits que vous avez
+            sélectionnés, leur prix et les options de livraisons (avec les frais de livraison concernés). Vous devrez
+            alors choisir les options de livraison ainsi que les méthodes d'envoi et de paiement qui vous conviennent le
+            mieux.
+            En haut de cette page, se situe le bouton d'achat. Vous devez cliquer sur ce bouton pour confirmer et passer
+            votre commande.
+            Après avoir passé votre commande, nous vous adressons un message de confirmation. Nous vous informons de
+            l'envoi de vos articles. Vous avez néanmoins la possibilité de modifier votre commande jusqu'à la date
+            d'envoi de vos articles.
+            Veuillez noter que nous vendons des produits seulement en quantités correspondant aux besoins moyens
+            habituels d'un foyer. Ceci s'applique aussi bien au nombre de produits commandés dans une seule commande
+            qu'au nombre de commandes individuelles respectant la quantité habituelle d'un foyer normal passées pour le
+            même produit. Valkyrie ne vend pas aux bibliothèques de prêt.
+            Vous acceptez d'obtenir les factures de vos achats par voie électronique. Pour chaque livraison, nous vous
+            indiquerons dans le message de confirmation d'envoi si une facture électronique est disponible. Pour plus
+            d'informations sur les factures électroniques et pour savoir comment recevoir une copie papier, merci de
+            consulter nos pages d'Aide.
+        </p>
+        <h4>2. DROIT DE RETENTION</h4>
+        <p> Les produits livrés restent la propriété de Valkyrie jusqu'à leur remise au transporteur.
+        </p>
+        <h4>3. DROIT DE RETRACTATION DE 14 JOURS, EXCEPTIONS AU DROIT DE RETRACTATION, NOTRE POLITIQUE DE RETOURS SOUS
+            30 JOURS</h4>
+        <h5>DROIT LEGAL DE RETRACTATION</h5>
+        <p> A moins que l'une des exceptions listées ci-dessous ne soit applicable, vous pouvez vous rétracter de votre
+            commande sans donner de motif dans un délai de 14 jours courant à compter de la date à laquelle vous-même,
+            ou un tiers désigné par vous (autre que le transporteur), a pris physiquement possession des biens achetés
+            (ou du dernier bien, lot ou pièce si le contrat porte sur la livraison de plusieurs biens ou plusieurs lots
+            ou pièces livrés séparément) ou de la date à laquelle vous avez conclu le contrat pour les prestations de
+            services.
+            Vous devez nous notifier (Valkyrie Sarl, 666 rue thiers, 76200 Dieppe) votre décision de vous rétracter de
+            votre commande. Vous pouvez soumettre votre demande en ligne conformément aux instructions et formulaires
+            disponibles auprès de notre centre de retours en ligne, en utilisant ce formulaire, ou par courrier. Dans le
+            cas où vous utiliseriez le Centre de retours en ligne, nous vous enverrons un accusé de réception.
+            Pour respecter la date limite de rétractation, il vous suffit d'envoyer votre demande de rétractation avant
+            que le délai de 14 jours n'expire et de renvoyer votre produit par le biais de notre centre de retours en
+            ligne.
+            Pour toute information complémentaire sur l'étendue, le contenu et les instructions quant à l'exercice de
+            votre droit de rétractation, merci de contacter notre Service Client.
+        </p>
+        <h5>EFFETS DE LA RETRACTATION</h5>
+        <p> Nous vous rembourserons tous les paiements que nous avons reçus de votre part, y compris les frais de
+            livraison standards (c'est-à-dire correspondant à la livraison la moins onéreuse que nous proposons) au plus
+            tard 14 jours à compter de la réception de votre demande de rétractation. Nous utiliserons le même moyen de
+            paiement que celui que vous avez utilisé lors de votre commande initiale, sauf si vous convenez expressément
+            d'un moyen différent. En tout état de cause, ce remboursement n'occasionnera pas de frais supplémentaires
+            pour vous. Nous pouvons différer le remboursement jusqu'à ce que nous ayons reçu le(s) produit(s) ou jusqu'à
+            ce que vous ayez fourni une preuve d'expédition du (des) produit(s), la date retenue étant celle du premier
+            de ces faits. Si le remboursement intervient après la date limite mentionnée ci-dessus, le montant qui vous
+            est dû sera augmenté de plein droit.
+            Veuillez noter que vous devez renvoyer le(s) produit(s) en suivant les instructions disponibles sur notre
+            centre de retours en ligne au plus tard 14 jours à compter de la date à laquelle vous nous avez notifié
+            votre décision de rétractation.
+            Vous devez prendre à votre charge les frais directs de renvoi du (des) produit(s). Vous serez responsable de
+            la dépréciation de la valeur du(s) produit(s) résultant de manipulations (autres que celles nécessaires pour
+            établir la nature, les caractéristiques et le bon fonctionnement de ce(s) produit(s))
+        </p>
+        <h5>NOTRE POLITIQUE DE RETOURS SOUS 30 JOURS</h5>
+        <p> Sans préjudice des droits qui vous sont reconnus par la loi, Valkyrie vous propose la politique de retours
+            suivante :
+            Tous les produits en provenance des sites de Valkyrie peuvent être retournés dans les 30 jours suivant la
+            réception des produits par Valkyrie si les produits sont complets et dans un état neuf et intact.
+            Si vous renvoyez un (des) produit(s) conformément à notre politique de retour, nous vous rembourserons le
+            prix que vous avez payé mais pas les frais de livraison de votre achat initial. De même, les risques liés au
+            transport et les frais de livraison de retour seront à votre charge. Cette politique de retours n'affecte
+            pas vos droits reconnus par la loi, y compris votre droit légal de rétractation décrit ci-dessus.
+            Consultez notre politique de retours pour plus d'informations.
+            Vous bénéficiez par ailleurs des garanties légales de conformité et des vices cachés mentionnées à l'article
+            7 des présentes Conditions Générales de Vente (« Notre responsabilité Garanties »).
+        </p>
+        <h4>4. PRIX ET DISPONIBILITE</h4>
+        <p> Tous les prix sont toutes taxes françaises comprises (TVA française et autres taxes applicables) sauf
+            indication contraire.
+            Nous affichons la disponibilité des produits que nous vendons sur le Site Internet sur chaque fiche produit.
+            Nous ne pouvons apporter plus de précision concernant la disponibilité des produits que ce qui est indiqué
+            sur ladite page ou ailleurs sur le Site Internet. Lors du traitement de votre commande, nous vous
+            informerons dès que possible par courrier électronique en utilisant l'adresse associée à votre abonnement ,
+            si des produits que vous avez commandés s'avèrent être indisponibles, et nous ne vous facturerons pas ces
+            produits.
+            En dépit de tous nos efforts, un petit nombre des produits présents dans notre catalogue peuvent afficher
+            une erreur sur le prix. Nous vérifierons le prix au moment du traitement de votre commande et avant tout
+            paiement. S'il s'avérait que nous avons fait une erreur sur l'affichage du prix, et que le prix réel est
+            supérieur au prix affiché sur le Site Internet, nous pouvons vous contacter pour vous demander si vous
+            souhaitez acheter le produit à son prix réel ou si vous préférez annuler votre commande. Si le prix réel est
+            inférieur au prix affiché, nous vous facturerons le montant le plus bas et nous vous enverrons le produit.
+        </p>
+        <h4>5. DOUANES</h4>
+        <p> Lorsque vous commandez des produits sur Valkyrie pour être livrés en dehors de l'Union Européenne, vous
+            pouvez être soumis à des obligations et des taxes sur l'importation, qui sont perçues lorsque le colis
+            arrive à destination. Tout frais supplémentaire de dédouanement sera à votre charge ; nous n'avons aucun
+            contrôle sur ces frais. Les politiques douanières varient fortement d'un pays à l'autre, vous devez donc
+            contacter le service local des douanes pour plus d'informations. Par ailleurs, veuillez noter que lorsque
+            vous passez commande sur Valkyrie, vous êtes considéré comme l'importateur officiel et devez respecter
+            toutes les lois et règlements du pays dans lequel vous recevez les produits. La protection de votre vie
+            privée est importante pour nous et nous attirons l'attention de nos clients internationaux sur le fait que
+            les livraisons transfrontalières sont susceptibles d'être ouvertes et inspectées par les autorités
+            douanières. Pour plus d'informations, consultez la page Informations douanières.
+        </p>
+        <h4>6. NOTRE RESPONSABILITE - GARANTIES</h4>
+        <p> Vous bénéficiez de la garantie légale de conformité dans les conditions des articles L.217-4 et suivants du
+            code de la consommation et de la garantie des vices cachés dans les conditions prévues aux articles 1641 et
+            suivants du code civil. Consultez notre page d'aide sur ces garanties pour plus d'informations.
+            Vous bénéficiez d'un délai de deux ans à compter de la délivrance du produit pour obtenir la mise en œuvre
+            de la garantie légale de conformité en cas d'apparition d'un défaut de conformité. Durant ce délai, vous
+            n’êtes tenu d'établir que l'existence du défaut de conformité et non la date d'apparition de celui-ci.
+            (I) Le vendeur professionnel refuse de réparer ou de remplacer le produit ;
+            (II) La réparation ou le remplacement du produit intervient après un délai de trente jours ;
+            (III) La réparation ou le remplacement du produit occasionne un inconvénient majeur pour vous, notamment si
+            vous supportez définitivement les frais de reprise ou d'enlèvement du produit non conforme, ou si vous
+            supportez les frais d'installation du produit réparé ou de remplacement ;
+            (IV) La non-conformité du produit persiste en dépit de la tentative de mise en conformité du vendeur restée
+            infructueuse.
+            Vous avez également droit à une réduction du prix du produit ou à la résolution du contrat lorsque le défaut
+            de conformité est si grave qu'il justifie que la réduction du prix ou la résolution du contrat soit
+            immédiate. Vous n'êtes alors pas tenu de demander la réparation ou le remplacement du produit au préalable.
+            Vous n'avez pas droit à la résolution de la vente si le défaut de conformité est mineur.
+            Toute période d'immobilisation du produit en vue de sa réparation ou de son remplacement suspend la garantie
+            qui restait à courir jusqu'à la délivrance du produit remis en état.
+            Les droits mentionnés ci-dessus résultent de l'application des articles L. 217-1 à L. 217-32 du code de la
+            consommation.
+            Le vendeur qui fait obstacle de mauvaise foi à la mise en œuvre de la garantie légale de conformité encourt
+            une amende civile d'un montant maximal de 300 000 euros, qui peut être porté jusqu'à 10 % du chiffre
+            d'affaires moyen annuel (article L. 241-5 du code de la consommation).
+            Vous bénéficiez également de la garantie légale des vices cachés en application des articles 1641 à 1649 du
+            code civil, pendant une durée de deux ans à compter de la découverte du défaut. Cette garantie donne droit à
+            une réduction de prix si le produit est conservé ou à un remboursement intégral contre restitution du
+            produit.
+            La garantie légale de conformité s'applique indépendamment de la garantie commerciale éventuellement
+            consentie.
+            Nous nous engageons à apporter tous les soins en usage dans la profession pour la mise en œuvre du service
+            offert au client. Néanmoins, notre responsabilité ne pourra pas être retenue en cas de retard ou de
+            manquement à nos obligations contractuelles si le retard ou manquement est dû à une cause en dehors de notre
+            contrôle : cas fortuit ou cas de force majeure tel que défini par la loi applicable.
+            Notre responsabilité ne sera pas engagée en cas de retard dû à une rupture de stock chez l'éditeur ou chez
+            le fournisseur. En outre, notre responsabilité ne sera pas engagée en cas de différences mineures entre les
+            photos de présentation des articles et les textes affichés sur le Site Internet Valkyrie.fr, et les produits
+            livrés.
+            Nous mettons en œuvre tous les moyens dont nous disposons pour assurer les prestations objets des présentes
+            Conditions Générales de Vente. Nous sommes responsables de tout dommage direct et prévisible au moment de
+            l'utilisation du Site Internet ou de la conclusion du contrat de vente entre nous et vous. Dans le cadre de
+            nos relations avec des professionnels, nous n'encourrons aucune responsabilité pour les pertes de bénéfices,
+            pertes commerciales, pertes de données ou manque à gagner ou tout autre dommage indirect ou qui n'était pas
+            prévisible au moment de l'utilisation du Site Internet ou de la conclusion du contrat de vente entre nous et
+            vous.
+            La limitation de responsabilité visée ci-dessus est inapplicable en cas de dol ou de faute lourde de notre
+            part, en cas de dommages corporels ou de responsabilité du fait des produits défectueux, en cas d'éviction
+            et en cas de non-conformité (y compris en raison de vices cachés).
+        </p>
+        <h4>7. DROIT APPLICABLE</h4>
+        <p> Les présentes Conditions d'utilisation sont soumises au droit français (à l'exception de ses dispositions
+            concernant les conflits de loi), et l'application de la Convention de Vienne sur les contrats de vente
+            internationale de marchandises est expressément exclue. Vous, comme nous, acceptons de soumettre tous les
+            litiges occasionnés par la relation commerciale existant entre vous et nous à la compétence non exclusive
+            des juridictions de la ville de Dieppe, ce qui signifie que pour l'application des présentes Conditions
+            Générales de Vente, vous pouvez intenter une action pour faire valoir vos droits de consommateur, en France
+            ou dans le pays de l'Union européenne dans lequel vous résidez. Si vous êtes un consommateur et que votre
+            résidence habituelle est située dans un pays de l'Union européenne, vous bénéficier également de droits vous
+            protégeant en vertu des dispositions obligatoires de la loi applicable dans votre pays de résidence.
+            Notre entreprise adhère à la Fédération du e-commerce et de la vente à distance (FEVAD) et au service de
+            médiation du e-commerce (60 rue la Boétie, 75008 Paris) – relationconso@fevad.com.
+            La Commission européenne met à disposition une plateforme en ligne de résolution des différends à laquelle
+            vous pouvez accéder ici: https://ec.europa.eu/consumers/odr/. Si vous souhaitez attirer notre attention sur
+            un sujet, merci de nous contacter.
+        </p>
+        <h4>8. MODIFICATION DU SERVICE OU DES CONDITIONS GENERALES DE VENTE</h4>
+        <p> Nous nous réservons le droit de faire des changements à notre Site Internet, nos procédures, et à nos termes
+            et conditions, y compris les présentes Conditions Générales de Vente à tout moment. Vous êtes soumis aux
+            termes et conditions, procédures et Conditions Générales de Vente en vigueur au moment où vous nous
+            commandez un produit, sauf si un changement à ces termes et conditions, ou les présentes Conditions
+            Générales de Vente est exigé par une autorité administrative ou gouvernementale (dans ce cas, cette
+            modification peut s'appliquer aux commandes antérieures que vous avez effectuées). Si l'une des stipulations
+            de ces Conditions Générales de Vente est réputée non valide, nulle ou inapplicable, quelle qu'en soit la
+            raison, cette stipulation sera réputée divisible et n'affectera pas la validité et l'effectivité des
+            stipulations restantes.
+        </p>
+        <h4>9. RENONCIATION</h4>
+        <p> Si vous enfreignez ces Conditions Générales de Vente et que nous ne prenons aucune action, nous serions
+            toujours en droit d'utiliser nos droits et voies de recours dans toutes les autres situations où vous
+            violeriez ces Conditions Générale de Vente.
+        </p>
+        <h4>10. MINEURS</h4>
+        <p> Nous vendons des produits interdits aux mineurs. Si vous avez moins de 18 ans, vous ne pouvez utiliser un
+            Service Valkyrie que sous la surveillance d'un parent ou d'un tuteur. Les offres de produits contenant du
+            contenu destinées à des personnes majeures. Vous devez avoir au moins 18 ans pour acheter des produits
+            contenant du contenu destinées à des personnes majeures.
+        </p>
+        <h4>11. IDENTIFICATION</h4>
+        <p> Valkyrie.fr est une marque commerciale utilisée par Valkyrie SARL. Nos informations de contact sont les
+            suivantes :
+            Succursale en France : Valkyrie SARL, succursale française, Valkyrie Sarl, 666 rue thiers, 76200 Dieppe, 
+            France Enregistrée en France Immatriculation au RCS, numéro : 123456789 R.C.S. Nanterre Numéro de TVA
+            intracommunautaire : FR 12345678910
+            Vous pouvez également nous contacter via notre service client et nous pourrons vous joindre par e-mail ou
+            par téléphone.
+            © 2022, Valkyrie.fr Incorporated.
+        </p>
+    </div>
+    <div class="backTop">
+        <a href="#cgu">Retour en haut de la page</a>
+    </div>
+</div>
+{% endblock %}
