@@ -2,12 +2,17 @@
 
 namespace App\Controller;
 
+use App\Entity\Order;
 use App\Form\CartType;
+use App\Entity\OrderItem;
+use App\Form\CartItemType;
 use App\Manager\CartManager;
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\HttpFoundation\Response;
+use App\Storage\CartSessionStorage;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\HttpFoundation\Session\Session;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 
 
@@ -25,8 +30,9 @@ class CartController extends AbstractController
         $cart = $cartManager->getCurrentCart();
         $form = $this->createForm(CartType::class, $cart);
         $form->handleRequest($request);
-
+ 
         if ($form->isSubmitted() && $form->isValid()) {
+           
             $cart->setModifieAt(new \DateTime());
             $cartManager->save($cart);
 
@@ -48,4 +54,5 @@ class CartController extends AbstractController
 
         ]);
     }
+
 }

@@ -57,7 +57,9 @@ class RegistrationController extends AbstractController
                     if ($diff->format("%y") <= "18" ) {
                         $user->setRoles(['ROLE_USER']);
                     } else {
-                        $user->setRoles(['ROLE_PERVER']);
+                        
+                        $user->setRoles(['ROLE_PERVERS']);
+                        $user->removeRoles('ROLE_USER');
                     }
                 } else {
                     $user->setRoles(['ROLE_USER']);

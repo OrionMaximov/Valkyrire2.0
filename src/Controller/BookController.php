@@ -25,6 +25,7 @@ class BookController extends AbstractController
         ]);
     }
 
+
     /**
      * @Route("/new", name="app_book_new", methods={"GET", "POST"})
      */
@@ -50,7 +51,8 @@ class BookController extends AbstractController
      * @Route("/{id}", name="app_book_show", methods={"GET"})
      */
     public function show(Livres $livre): Response
-    {
+    {   
+
         return $this->render('book/show.html.twig', [
             'livre' => $livre,
         ]);

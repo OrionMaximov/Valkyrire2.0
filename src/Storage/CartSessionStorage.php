@@ -4,8 +4,10 @@ namespace App\Storage;
 
 use App\Entity\Order;
 use App\Repository\OrderRepository;
+use phpDocumentor\Reflection\Types\Void_;
 use Symfony\Component\HttpFoundation\RequestStack;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
+use Symfony\Component\Security\Core\Authentication\Token\NullToken;
 
 class CartSessionStorage
 {
@@ -62,6 +64,8 @@ class CartSessionStorage
     {
         $this->getSession()->set(self::CART_KEY_NAME, $cart->getId());
     }
+
+    
 
     /**
      * Returns the cart id.

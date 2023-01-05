@@ -7,7 +7,7 @@
         {% for livres in livres %}
             <div class="col-md-4">
                 <div class="card mb-4">
-                    <img src="{{livres.image}}" alt="{{ livres.titre }}" class="card-img-top">
+                    <img src="{{asset('/uploads/upload/' ~ item.vars.data.livres.image)}}" alt="{{ livres.titre }}" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">{{ livres.titre }}</h5>
                         
