@@ -1,8 +1,14 @@
-Reste a faire le clear le remove fonctionne mais bizarre
+le remove fonctionne mais bizarre (a voir si on à le temps)
 
-faire une fonction pour gere le retour sur les bonne pages
+le readme
 
 a voir pour le search en lien avec le point au dessus 
 
-le pointage des bonne image (revoir l'ancienne version )
+correction des fautes de français(surtout celle de quentin)
+
+finaliser les html/css (page payement)
+
+formulaire juridique
+
+a voir si on peu ajouté le choix de l'adresse de livraison 
 

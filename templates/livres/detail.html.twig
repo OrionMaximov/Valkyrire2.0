@@ -6,7 +6,7 @@
     <div class="container">
         <div class="row mt-3 mb-4">
             <div class="col-md-4">
-                <img src="{{livres.id}}" alt="{{ livres.titre }}" class="img-fluid">
+                <img src="{{asset('/uploads/upload/' ~ livres.image)}}" alt="{{ livres.titre }}" class="img-fluid">
             </div>
             <div class="col-md-8">
                 <h1 class="mt-4 mt-md-0">{{ livres.titre }}</h1>

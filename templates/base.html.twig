@@ -40,13 +40,13 @@
                 <div class="collapse navbar-collapse" id="navbarColor02">
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="{# {{path ('app_bande_d_index')}} #}">Bandes Dessinées</a>
+                            <a class="nav-link" id="bande_d" href="{{path ('app_genre')}}?genres=bande_d">Bandes Dessinées</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{# {{path ('app_comics_index')}} #}">Comics</a>
+                            <a class="nav-link" id="comics" href="{{path ('app_genre')}}?genres=comics">Comics</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{# {{path ('app_mangas_index')}} #}">Mangas</a>
+                            <a class="nav-link" id="mangas" href="{{path ('app_genre')}}?genres=mangas">Mangas</a>
                         </li>
                         
                     </ul>
@@ -64,7 +64,7 @@
                                 <a class="nav-link" href="{{path ('app_login')}}">Connexion</a>
                             </li>
                         {% endif %}
-                        {% if is_granted('ROLE_PERVER')%}
+                        {% if is_granted('ROLE_PERVERS')%}
                         <li class="nav-item">
                             <a class="nav-link" href="#">Coquinou</a>
                         </li>
@@ -75,8 +75,8 @@
                         {% endif %}
                     </ul>
                     <form class="d-flex" id="searchBar">   
-                        <input class="form-control me-sm-2" type="text" placeholder="Search">
-                        <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+                        <input class="form-control me-sm-1" type="text" placeholder="Recherche">
+                        <button class="btn btn-dark my-2 my-sm-0" type="submit">Rechercher</button>
                     </form>
                 </div>
             </div>

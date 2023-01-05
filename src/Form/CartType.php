@@ -3,23 +3,27 @@
 namespace App\Form;
 
 use App\Entity\Order;
-use App\Form\EventListener\ClearCartListener;
-use App\Form\EventListener\RemoveCartItemListener;
-use Symfony\Component\Form\AbstractType;
-use Symfony\Component\Form\Extension\Core\Type\CollectionType;
-use Symfony\Component\Form\Extension\Core\Type\SubmitType;
-use Symfony\Component\Form\FormBuilderInterface;
+use DateTimeInterface;
+use App\Storage\CartSessionStorage;
+use Doctrine\DBAL\Types\DateTimeType;
 use Symfony\Component\Form\FormEvents;
+use Symfony\Component\Form\AbstractType;
+use App\Form\EventListener\ClearCartListener;
+use Symfony\Component\Form\FormBuilderInterface;
+use App\Form\EventListener\RemoveCartItemListener;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Form\Extension\Core\Type\DateType;
+use Symfony\Component\Form\Extension\Core\Type\SubmitType;
+use Symfony\Component\Form\Extension\Core\Type\CollectionType;
 
 class CartType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
-            //->add('status')
-            //->add('creeAt')
-            //->add('modifieAt')
+            
+            //->add('creeAt',DateType::class)
+            //->add('modifieAt',DateTimeInterface::class)
             ->add('items', CollectionType::class, [
                 'entry_type' => CartItemType::class
             ])

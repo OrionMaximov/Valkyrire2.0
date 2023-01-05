@@ -63,4 +63,23 @@ class LivresRepository extends ServiceEntityRepository
 //            ->getOneOrNullResult()
 //        ;
 //    }
+    public function findByGenres($value)
+    {
+        return $this->createQueryBuilder('l')
+        ->andWhere('l.genres = :val')
+        ->setParameter('val', $value)
+        ->getQuery()
+        ->getResult()
+        ;
+    }
+
+    public function findByPervers($value)
+    {
+        return $this->createQueryBuilder('l')
+        ->andWhere('l.pervers = :val')
+        ->setParameter('val', $value)
+        ->getQuery()
+        ->getResult()
+        ;
+    }
 }

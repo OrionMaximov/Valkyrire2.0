@@ -35,9 +35,8 @@ security:
         - { path: ^/admin, roles: ROLE_ADMIN }
         # - { path: ^/profile, roles: ROLE_USER }
     role_hierarchy:
-        ROLE_PERVER: ROLE_PERVER
-        ROLE_ADMIN: [ROLE_USER,ROLE_PERVER]
-        ROLE_SUPER: [ROLE_ADMIN,ROLE_USER,ROLE_PERVER]
+        ROLE_PERVERS: ROLE_PERVERS
+        ROLE_ADMIN: [ROLE_USER,ROLE_PERVERS]
 
 when@test:
     security:

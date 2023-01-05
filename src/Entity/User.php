@@ -132,7 +132,13 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     {
         $roles = $this->roles;
         // guarantee every user at least has ROLE_USER
-        $roles[] = 'ROLE_USER';
+        
+        if (count($roles) > 0) {
+            $key = array_search('ROLE_USER', $roles, true);
+            if ($key !== false) {
+                unset($roles[$key]);
+            }
+        }
 
         return array_unique($roles);
     }
@@ -278,5 +284,15 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
 
         return $this;
     }
+
+    public function removeRoles(string $role): void
+    {
+        $key = array_search($role, $this->roles, true);
+        if ($key !== false) {
+            unset($this->roles[$key]);
+            $this->roles = array_values($this->roles);
+        }
+    }
+
 
 }
