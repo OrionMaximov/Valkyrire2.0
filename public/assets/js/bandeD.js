@@ -8,8 +8,6 @@ const photos2 = document.querySelector(".bandeD");
         "assets/image/covers/bandeD/Thorgal.jpg",
         "assets/image/covers/bandeD/Le donjon de Naheulbeuk.jpg",
         "assets/image/covers/bandeD/Le scrameustache.jpg",
-
-
     ];
     const imgFull2 = [];
     const frameimg2 = document.createElement("div");

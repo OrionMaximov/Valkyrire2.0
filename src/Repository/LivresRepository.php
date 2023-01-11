@@ -73,6 +73,16 @@ class LivresRepository extends ServiceEntityRepository
         ;
     }
 
+    public function findByTitre($value)
+    {
+        return $this->createQueryBuilder('l')
+        ->andWhere('l.titre = :val')
+        ->setParameter('val', "%".$value."%")
+        ->getQuery()
+        ->getResult()
+        ;
+    }
+
     public function findByPervers($value)
     {
         return $this->createQueryBuilder('l')

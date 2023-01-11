@@ -3,24 +3,26 @@
 {% block title %}Notre selection{% endblock %}
 
 {% block body %}
+
 <div class="container">
-    <h1 class="mt-3 mb-4">Livres</h1>
-    <div class="row">
-        {% for livres in livres %}
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <img src="{{asset('/uploads/upload/' ~ livres.image)}}" alt="{{ livres.titre }}" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">{{ livres.titre }}</h5>
-                        
-                        <div class="d-flex justify-content-between align-item-center">
-                            <a href="{{ path('livres.detail', {id: livres.id})}} " class="btn btn-dark">Plus d'infos</a>
-                            <span class="h5 mt-auto">{{ livres.prix }} €</span>
+        <h1 class="mt-3 mb-4">Livres</h1>
+        <div class="row">
+            {% for livres in livres %}
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="{{asset('/uploads/upload/' ~ livres.image)}}" alt="{{ livres.titre }}" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ livres.titre }}</h5>
+                            
+                            <div class="d-flex justify-content-between align-item-center">
+                                <a href="{{ path('livres.detail', {id: livres.id})}} " class="btn btn-dark">Plus d'infos</a>
+                                <span class="h5 mt-auto">{{ livres.prix }} €</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        {% endfor %}
+            {% endfor %}
+        </div>
     </div>
-</div>
+
 {% endblock %}
