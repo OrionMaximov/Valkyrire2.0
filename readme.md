@@ -1,3 +1,15 @@
+<p align="center">
+    <a href="/LICENSE">
+        <img alt="GitHub" src="https://img.shields.io/github/license/OrionMaximov/Valkyrire2.0?color=%2360be86&style=for-the-badge">
+    </a>
+    <a href="https://github.com/OrionMaximov/Valkyrire2.0/graphs/contributors">
+        <img alt="GitHub contributors" src="https://img.shields.io/github/contributors-anon/OrionMaximov/Valkyrire2.0?color=%2360be86&style=for-the-badge">
+    </a>
+    <a href="https://github.com/OrionMaximov/Valkyrire2.0/stargazers">
+        <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/OrionMaximov/Valkyrire2.0?color=%2360be86&label=github%20stars&style=for-the-badge">
+    </a>
+</p>
+
 <p align="center">Hello World!! We worked with my two colleagues on this presentation project.</p>
 
 
@@ -32,14 +44,3 @@
 
 
 
-<p align="center">
-    <a href="/LICENSE">
-        <img alt="GitHub" src="https://img.shields.io/github/license/OrionMaximov/Valkyrire2.0?color=%2360be86&style=for-the-badge">
-    </a>
-    <a href="https://github.com/OrionMaximov/Valkyrire2.0/graphs/contributors">
-        <img alt="GitHub contributors" src="https://img.shields.io/github/contributors-anon/OrionMaximov/Valkyrire2.0?color=%2360be86&style=for-the-badge">
-    </a>
-    <a href="https://github.com/OrionMaximov/Valkyrire2.0/stargazers">
-        <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/OrionMaximov/Valkyrire2.0?color=%2360be86&label=github%20stars&style=for-the-badge">
-    </a>
-</p>
