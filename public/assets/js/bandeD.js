@@ -32,6 +32,7 @@ const photos2 = document.querySelector(".bandeD");
         divImg.classList.add("divImg");
         divImg.style.width = "23%";
         divImg.style.marginBottom = "2%";
+        divImg.style.padding = "1.5%";
         photos2.append(divImg);
         let imgphotos2 = document.createElement("img");
         imgphotos2.alt = "description photo p" + (index2 + 1);
@@ -48,8 +49,8 @@ const photos2 = document.querySelector(".bandeD");
                 frameimg2.style.display = "flex";
 
                 imgFull2[n] = document.createElement("img");
-                imgFull2[n].width = 700;
-                imgFull2[n].height = 500;
+                imgFull2[n].width = 500;
+                imgFull2[n].height = 700;
                 imgFull2[n].src = tabphotos2[n];
                 frameimg2.append(imgFull2[n]);
             }

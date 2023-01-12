@@ -34,6 +34,7 @@ const photos1 = document.querySelector(".comic");
         divImg.classList.add("divImg");
         divImg.style.width = "23%";
         divImg.style.marginBottom = "2%";
+        divImg.style.padding = "1.5%";
         photos1.append(divImg);
         let imgphotos1 = document.createElement("img");
         imgphotos1.alt = "description photo p" + (index1 + 1);
@@ -50,8 +51,8 @@ const photos1 = document.querySelector(".comic");
                 frameimg1.style.display = "flex";
 
                 imgFull1[n] = document.createElement("img");
-                imgFull1[n].width = 700;
-                imgFull1[n].height = 500;
+                imgFull1[n].width = 500;
+                imgFull1[n].height = 700;
                 imgFull1[n].src = tabphotos1[n];
                 frameimg1.append(imgFull1[n]);
             }
