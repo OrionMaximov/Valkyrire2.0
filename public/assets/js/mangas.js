@@ -35,6 +35,7 @@
         divImg.classList.add("divImg");
         divImg.style.width = "23%";
         divImg.style.marginBottom = "2%";
+        divImg.style.padding = "1.5%";
         photos.append(divImg);
         let imgPhotos = document.createElement("img");
         imgPhotos.alt = "description photo p" + (index + 1);
@@ -51,8 +52,8 @@
                 frameImg.style.display = "flex";
 
                 imgFull[n] = document.createElement("img");
-                imgFull[n].width = 700;
-                imgFull[n].height = 500;
+                imgFull[n].width = 500;
+                imgFull[n].height = 700;
                 imgFull[n].src = tabPhotos[n];
                 frameImg.append(imgFull[n]);
             }

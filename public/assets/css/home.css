@@ -67,6 +67,7 @@ h2{
     text-align: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    margin:0;
     
 }
 .baci{
@@ -104,7 +105,9 @@ h2{
     margin-bottom: 2rem;   
 }
 .bandeD img,.comic img,.mangas img {
-   height: 400px;
-   width: auto;
+   min-height:400px ;
+   max-height: 400px;
+   max-width:300px;
 }
+/* @media height 300px et changé le width */
 
