@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'manga';
+    src: url(../font/mangat.ttf);
+}
+@font-face {
+    font-family: 'comic';
+    src: url(../font/SF_Cartoonist_Hand_SC_Bold.ttf);
+}
+@font-face {
+    font-family: 'bd';
+    src: url(../font/Asterix.ttf);
+}
+
+.mangafont{
+    font-family: 'manga';
+}
+.bdfont{
+    font-family: 'bd';
+}
+.comicfont{
+    font-family: 'comic';
+}
+
