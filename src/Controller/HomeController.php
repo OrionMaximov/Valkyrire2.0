@@ -2,10 +2,12 @@
 
 namespace App\Controller;
 
+use App\Entity\Livres;
 use App\Repository\LivresRepository;
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 class HomeController extends AbstractController
 {
@@ -18,6 +20,15 @@ class HomeController extends AbstractController
             'livres' => $livresRepository->findAll(),
         ]);
     }
+
+    public function searchApi(Request $request)
+    {
+        $value = $request->query->get('query');
+        $resultat = $this->getDoctrine()->getRepository(LivresRepository::class)->findByTitre($value);
+
+        return $this->json($resultat);
+    }
+
 
     /**
      * @Route("/cgu", name="cgu")
