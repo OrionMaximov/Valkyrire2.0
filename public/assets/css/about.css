@@ -1,5 +1,5 @@
 .taille{
-    width: 50%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,20 +9,28 @@ h2, h3{
     text-align: center;
 }
 .taille img{  
-    max-height: 400px;
+    max-height: 140px;
+    min-height: 140px;
+    min-width: 250px;
     max-width: 250px;
     width: 90%;
 }
+.taille p{  
+    min-width: 250px;
+    max-width: 250px;
+    width: 100%;
+    margin:2rem;
+}
 .bodz{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin: 1rem auto;
-     
+    width: 92%;   
 }
+
 .large{
-    
     background-image: url(../image/background-portrait.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain; 
 }
