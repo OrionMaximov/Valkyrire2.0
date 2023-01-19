@@ -7,9 +7,7 @@
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
     <link rel="stylesheet" href="https://bootswatch.com/5/spacelab/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="{{asset('node_modules/easy-autocomplete/dist/easy-autocomplete.min.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/autocomplete.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/font.css')}}">
     {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
     {% block stylesheets %}
@@ -21,15 +19,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
     </script>
-    <script src="{{asset('node_modules/easy-autocomplete/dist/jquery.easy-autocomplete.min.js')}}"></script>
-    <script>
-        var options = {
-            url: "{{ path('search_api') }}",
-            getValue: "name"
-        };
-        $("#search-input").easyAutocomplete(options);
-    </script>
-    <script src="{{asset('assets/js/autocomplete.js')}}" defer></script>
     <script src="{{asset('assets/js/carousel.js')}}" defer></script>
    
     {% block javascripts %}
@@ -89,7 +78,7 @@
                         {% endif %}
                     </ul>
                     <form class="d-flex" id="searchBar">   
-                        <input class="form-control me-sm-1" type="text" placeholder="Recherche" id="search-input">
+                        <input class="form-control me-sm-1" type="text" placeholder="Recherche">
                         <button class="btn btn-dark my-2 my-sm-0" type="submit">Rechercher</button>
                     </form>
                 </div>
