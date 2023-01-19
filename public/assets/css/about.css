@@ -13,7 +13,7 @@ h2, h3{
     min-height: 140px;
     min-width: 250px;
     max-width: 250px;
-    width: 100%;
+    width: 90%;
 }
 .taille p{  
     min-width: 250px;
@@ -25,9 +25,9 @@ h2, h3{
     display: flex;
     justify-content: space-around;
     margin: 1rem auto;
-    width: 92%;
-     
+    width: 92%;   
 }
+
 .large{
     background-image: url(../image/background-portrait.jpg);
     background-position: center;
