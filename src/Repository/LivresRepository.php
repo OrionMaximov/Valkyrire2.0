@@ -38,7 +38,8 @@ class LivresRepository extends ServiceEntityRepository
             $this->getEntityManager()->flush();
         }
     }
-
+    
+    
 //    /**
 //     * @return Livres[] Returns an array of Livres objects
 //     */
@@ -63,6 +64,15 @@ class LivresRepository extends ServiceEntityRepository
 //            ->getOneOrNullResult()
 //        ;
 //    }
+    public function searchBooks($query)
+    {
+            $qb = $this->createQueryBuilder('search');
+            $qb->where('search.titre LIKE :query')
+                ->orWhere('search.auteur LIKE :query')
+                ->setParameter('query', '%'.$query.'%');
+            dump($qb->getDQL());
+            return $qb->getQuery()->getResult();
+    }
     public function findByGenres($value)
     {
         return $this->createQueryBuilder('l')
@@ -92,4 +102,6 @@ class LivresRepository extends ServiceEntityRepository
         ->getResult()
         ;
     }
+
+   
 }
