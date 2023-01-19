@@ -41,7 +41,6 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    
 }
 .footer a{
     width: 50%;
@@ -63,7 +62,6 @@
     position: fixed;
     bottom: 0;
 }
-
 .cover{
     margin: 1rem auto;  
 }
