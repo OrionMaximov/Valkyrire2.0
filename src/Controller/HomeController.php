@@ -22,6 +22,15 @@ class HomeController extends AbstractController
         ]);
     }
 
+    public function searchApi(Request $request)
+    {
+        $value = $request->query->get('query');
+        $resultat = $this->getDoctrine()->getRepository(LivresRepository::class)->findByTitre($value);
+
+        return $this->json($resultat);
+    }
+
+
     /**
      * @Route("/cgu", name="cgu")
      */
