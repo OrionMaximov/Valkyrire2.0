@@ -25,29 +25,29 @@
 </div>
 
 <p>
-I. INTRODUCTION
+<h2>I. INTRODUCTION</h2>
 Le projet sur lequel nous avons travaillé consiste en la création d'un site internet de vente de livres en ligne. Notre objectif était de mettre en place une plateforme simple d'utilisation et attrayante pour les utilisateurs, afin de leur permettre de trouver et acheter facilement les livres qu'ils recherchent.
 Pour atteindre cet objectif, nous avons mis en place une interface ergonomique et intuitive, ainsi qu'une base de données complète et mise à jour en permanence. 
 Au cours de ce projet, nous avons également veillé à ce que le site respecte les normes de sécurité et de confidentialité, afin de garantir la tranquillité d'esprit des utilisateurs lors de leurs achats en ligne.
 Enfin, nous avons mis en place un système de paiement sécurisé pour offrir une expérience d'achat en ligne la plus agréable possible aux utilisateurs.
-En résumé, notre site internet de vente de livres en ligne vise à offrir une expérience d'achat simple, sécurisée et personnalisée aux utilisateurs, tout en leur permettant de découvrir de nouveaux livres et de partager leur passion pour la lecture.
+En résumé, notre site internet de vente de livres en ligne vise à offrir une expérience d'achat simple, sécurisée et personnalisée aux utilisateurs, tout en leur permettant de découvrir de nouveaux livres et de partager leur passion pour la lecture.</p><p>
 
-II. CONTEXTE GENERAL DU PROJET
+<h2>II. CONTEXTE GENERAL DU PROJET</h2>
 Un site de vente de livres sur Internet est un type de site Web qui permet aux utilisateurs de naviguer, de rechercher et d'acheter des livres en ligne. 
 Le site de vente de livres sur Internet offre généralement une grande variété de livres, allant des best-sellers aux livres rares et épuisés. Les utilisateurs peuvent rechercher des livres en fonction de différents critères, tels que le titre, l'auteur, le genre ou le sujet. Une fois qu'un livre est sélectionné, l'utilisateur peut l'ajouter à son panier et effectuer son paiment pour finaliser l'achat.
 En outre, le site peut offrir des recommandations de livres en fonction des préférences de lecture de l'utilisateur et de ses achats antérieurs.
-Dans l'ensemble, un site de vente de livres sur Internet offre une expérience de shopping pratique et fonctionnel pour les amateurs de livres, leur permettant de trouver et d'acheter facilement les livres qu'ils souhaitent.
+Dans l'ensemble, un site de vente de livres sur Internet offre une expérience de shopping pratique et fonctionnel pour les amateurs de livres, leur permettant de trouver et d'acheter facilement les livres qu'ils souhaitent.</p><p>
 
-III. FONCTIONNALITES A METTRE EN PLACE
+<h2>III. FONCTIONNALITES A METTRE EN PLACE</h2>
 Voici quelques fonctionnalités que nous avons mis en place pour le site de vente de livres sur Internet :
 Un compte utilisateur qui permet aux utilisateurs de créer un compte sur le site et de suivre leur historique d'achats, de recevoir des recommandations de livres et de bénéficier de réductions exclusives.
 Un système de recherche de livres qui permet aux utilisateurs de rechercher des livres en fonction de différents critères, tels que le titre, l'auteur, le genre ou le sujet.
 Un panier d'achat qui permet aux utilisateurs d'ajouter des livres à leur panier et de finaliser leur achat en une seule transaction.
 Des options de livraison qui permettent aux utilisateurs de choisir comment ils souhaitent recevoir leur livre, par exemple par la poste ou en point relais.
 Un système de paiement sécurisé qui permet aux utilisateurs de payer en toute sécurité en utilisant leur carte de crédit ou un autre moyen de paiement en ligne.
-Un service client qui permet aux utilisateurs de poser des questions et de résoudre tout problème lié à leur achat de livres en ligne.
+Un service client qui permet aux utilisateurs de poser des questions et de résoudre tout problème lié à leur achat de livres en ligne.</p><p>
 
-IV. PLANIFICATION DU PROJET
+<h2>IV. PLANIFICATION DU PROJET</h2>
 Voici quelques étapes que nous avons planifier pour le projet de site de vente en ligne de livres :
 Établissement des objectifs du projet : 
 Création d'un site internet de vente de livres avec une selection de produit,  un moyen de paiment, un moyen de livraison...
