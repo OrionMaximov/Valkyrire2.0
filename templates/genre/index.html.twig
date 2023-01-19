@@ -4,12 +4,12 @@
 
 {% block body %}
 
-<div class="container ">
+<div class="container {% if genre == 'mangas' %} mangafont {% elseif genre == 'bande_d' %} bdfont {% elseif genre == 'comics' %} comicfont {% endif %}">
         <h1 class="mt-3 mb-4">Livres</h1>
         <div class="row">
             {% for livres in livres %}
                 <div class="col-md-4">
-                    <div class="cover card mb-4">
+                    <div class="cover card mb-4 ">
                         <img src="{{asset('/uploads/upload/' ~ livres.image)}}" alt="{{ livres.titre }}" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">{{ livres.titre }}</h5>

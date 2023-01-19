@@ -11,11 +11,24 @@
     margin: 0;
 }
 #searchBar{
-    width: 30%;
+    position: relative;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin: 1rem auto;
+    align-items: center;
 }
+
+#results{ 
+    position: absolute;
+    background-color: white;
+    color: black;
+    margin: 1rem auto;
+    top: 60px; /* 60px est la hauteur de ta barre de recherche */
+    left:62rem;
+    overflow: auto;
+    
+}
+
 #navbarColor02 ul{
     margin: 1rem auto;
     text-align: center;
