@@ -9,6 +9,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Security\Core\Security;
 
 class GenreController extends AbstractController
@@ -16,7 +17,7 @@ class GenreController extends AbstractController
     /**
      * @Route("/genre", name="app_genre", methods={"GET"})
      */
-    public function index(LivresRepository $livresRepository,Security $security): Response
+    public function index(LivresRepository $livresRepository,Security $security,Request $request): Response
     {   
 
         $user=$security->getUser();
@@ -53,9 +54,10 @@ class GenreController extends AbstractController
                     }   
                 }  
         }
-
+        $genre = $request->query->get('genres');
         return $this->render('genre/index.html.twig', [
             'livres' => $livres ,
+            'genre' => $genre
         ]);
     }
 }

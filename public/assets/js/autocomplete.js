@@ -1,48 +1,30 @@
-const inputSearch = document.querySelector("[placeholder='search']");
-const doc = document.getElementById("retour");
 
-
-
-// a faire lundi 
-/* inputSearch.addEventListener("blur", ()=> {
-    doc.innerHTML="";
-}); */
-
-inputSearch.addEventListener(
-    "keyup",
-    (e) => {
-        const inputText = e.target.value;
-        console.log(` voilà la suite ${inputText} `);
-        fetch("{{ path('search_api') }}?resultat=" + inputText)
-            .then((reponse) => {
-                return reponse.json();
-
-            })
-            .then((json) => {
-
-                affichage(json);
-            })
-    }
-
-)
-
-function affichage(json) {
-    if (json.length !== 0) {
-        doc.innerHTML = "";
-        let retour = "";
-        json.forEach(element => {
-
-            retour += `<div onclick= "validComplete('${element.title}')"> ${element.title}</div>`;
+  jQuery(document).ready(function($) {
+    $("#searchBar").submit(function(e) {
+        e.preventDefault();
+        var query = $(".form-control").val();
+        $.ajax({
+            type: "POST",
+            url: "/search",
+            data: { query: query },
+            success: function(response) {
+                let books = response;
+                let results = $("#results");
+                results.html("");
+                $("#results").insertAfter("#searchBar");
+                for (var i = 0; i < books.length; i++) {
+                    var book = books[i];
+                    results.append("<p class='book-result' data-id='"+ book.id + "'>" + book.titre + " par " + book.auteur + "</p>");
+                } 
+                $(".book-result").on("click", function() {
+                    var bookId = $(this).data("id");
+                    window.location.href = "/livres/" + bookId;
+                });
+            },
+            error: function(error) {
+                console.log(error);
+            }
         });
-        doc.innerHTML = retour;
-    }else{
-        doc.innerHTML = "On a pas trouvé alors cherche ailleurs";
-    }
-
-}
-function validComplete(value){
-    console.log(value);
-   inputSearch.value =value;
-   doc.innerHTML = "";
-}
+    });
+});
 

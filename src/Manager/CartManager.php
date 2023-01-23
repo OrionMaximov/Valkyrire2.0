@@ -69,4 +69,5 @@ class CartManager
         // Persist in session
         $this->cartSessionStorage->setCart($cart);
     }
+
 }
