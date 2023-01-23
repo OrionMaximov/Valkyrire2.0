@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+{{ encore_entry_link_tags('app') }}
+<link rel="stylesheet" href="{{asset('assets/css/login.css')}}">
+<link rel="stylesheet" href="{{ asset('assets/css/footerpos.css') }}" />
+{% endblock %}
+
+{% block title %}Nous Contactez{% endblock %}
+
+{% block body %}
+<div class="divForm">
+    {% for flash_error in app.flashes('verify_email_error') %}
+        <div class="alert alert-danger" role="alert">{{ flash_error }}</div>
+    {% endfor %}
+
+    <h1>Vos questions</h1>
+
+    {{ form_start(Contact) }}
+        {{ form_row(Contact.nom) }}
+        {{ form_row(Contact.prenom) }}
+        {{ form_row(Contact.mail) }}
+        {{ form_row(Contact.question) }}
+
+        <button type="submit" class="btn btn-success" >
+            Envoyer
+        </button>
+        
+</div>
+    
+    {{ form_end(Contact) }}
+    
+{% endblock %}

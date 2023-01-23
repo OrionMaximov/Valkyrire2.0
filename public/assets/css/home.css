@@ -65,7 +65,7 @@ h2{
     
 }
 .baci{
-    height: 80vh;
+    height: 90vh;
     width: 100%;
     background-image: url(../image/noustevoyons.jpg);
     background-position: center;
@@ -85,16 +85,11 @@ h2{
 .baci a{
     text-decoration: none;
     color: white;
-    border: 3px;
-    border-color: blue;
 }
-#red{
-    background-color: red;
+.baci h4{
+    text-decoration: none;
+    color: white;
 }
-#green{
-    background-color: green;
-}
-
 .bandeD,.mangas,.comic{
     margin-bottom: 2rem;   
 }
@@ -104,4 +99,7 @@ h2{
    max-width:300px;
 }
 
-
+#position{
+    position: fixed;
+    bottom: 0;
+}

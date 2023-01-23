@@ -34,3 +34,8 @@ h2, h3{
     background-repeat: no-repeat;
     background-size: contain; 
 }
+
+#position{
+    position: fixed;
+    bottom: 0;
+}

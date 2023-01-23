@@ -3,6 +3,8 @@
 namespace App\Controller;
 
 use App\Entity\Livres;
+use App\Entity\Contact;
+use App\Form\ContactType;
 use App\Repository\LivresRepository;
 use Doctrine\Persistence\ManagerRegistry;
 use Symfony\Component\HttpFoundation\Request;
@@ -38,6 +40,19 @@ class HomeController extends AbstractController
     {
         return $this->render('home/cgu.html.twig', [
             
+        ]);
+    }
+
+    /**
+     * @Route("/contact", name="contact")
+     */
+    public function indexContact(Request $request): Response
+    {
+        $contact=new Contact();
+        $form= $this->createForm(ContactType::class,$contact);
+        $form->handleRequest($request);
+        return $this->render('home/contact.html.twig', [
+            'Contact' => $form->createView(),
         ]);
     }
 

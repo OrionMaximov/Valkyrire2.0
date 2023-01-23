@@ -3,6 +3,7 @@
 {% block stylesheets %}
 {{ encore_entry_link_tags('app') }}
 <link rel="stylesheet" href="{{asset('assets/css/login.css')}}">
+<link rel="stylesheet" href="{{ asset('assets/css/footerpos.css') }}" />
 {% endblock %}
 
 {% block title %}Inscription{% endblock %}
@@ -46,7 +47,7 @@
         </button>
 </div>
     <div class="agreeTerms">
-        {{ form_row(registrationForm.agreeTerms) }}
+        {{ form_row(registrationForm.agreeTerms)}}
     </div>
     {{ form_end(registrationForm) }}
     

@@ -29,6 +29,7 @@ class RegistrationFormType extends AbstractType
             ->add('telephone')           
             ->add('agreeTerms', CheckboxType::class, [
                 'mapped' => false,
+                'label' => "Accepter les conditions d'utilisations de ce magnifique site",
                 'constraints' => [
                     new IsTrue([
                         'message' => "Vous devez accepter les termes d'utilisations.",
