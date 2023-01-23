@@ -35,28 +35,27 @@
 }
 .footer{
     width: 100%;
-    height: 8rem;
-    margin:  auto;
+    height: 3rem;
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
     align-items: center;
+   
+    
 }
 .footer a{
-    width: 50%;
     color: white;
     text-decoration: none;
 }
 .footer i,.footer p{
     color:white;
+    margin:0;
 }
 #position{
     background-color: black;
     bottom:0;
     width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
     position: fixed;
