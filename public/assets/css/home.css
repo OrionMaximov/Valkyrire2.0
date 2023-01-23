@@ -71,7 +71,7 @@ h2{
     
 }
 .baci{
-    height: 50vh;
+    height: 90vh;
     width: 100%;
     background-image: url(../image/noustevoyons.jpg);
     background-position: center;
@@ -93,6 +93,8 @@ h2{
     color: white;
     border: 3px;
     border-color: blue;
+
+
 }
 #red{
     background-color: red;
