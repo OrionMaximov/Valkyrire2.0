@@ -10,11 +10,11 @@
     </a>
 </p>
 
-<p align="center">Hello World!! We worked with my two colleagues on this presentation project.</p>
+<p align="center">Bonjour, nous avons travaillé plus ou moins avec un ou deux collègues, sur ce projet de présentation de formation.</p>
 
 
 
-<p align="left">You can join us with this</p>
+<p align="left">Vous pouvez nous joindre ici ou là bas.</p>
 
 
 
@@ -36,7 +36,7 @@
 <p>
 <h2>II. FONCTIONNALITES  EN PLACE</h2>
 <p>Voici quelques fonctionnalités que nous avons mis en place pour le site de vente de livres sur Internet :
-<p>Un compte utilisateur qui permet aux utilisateurs de créer un compte sur le site et de suivre leur historique d'achats, de recevoir des recommandations de livres et de bénéficier de réductions exclusives.</p>
+<p>Un compte utilisateur qui permet aux utilisateurs de créer un compte sur le site.</p>
 <p>Un panier d'achat qui permet aux utilisateurs d'ajouter des livres à leur panier et de finaliser leur achat en une seule transaction.(à Modifier le remove bug)</p>
 <p>Un système de recherche de livres qui permet aux utilisateurs de rechercher des livres en fonction de différents critères, tels que le titre, l'auteur.</p>
 <p>Un système de paiement sécurisé qui permet aux utilisateurs de payer en toute sécurité en utilisant leur carte de crédit ou un autre moyen de paiement en ligne.</p>
@@ -47,12 +47,13 @@
 <p>Voici quelques fonctionnalités que nous avons mis en place pour le site de vente de livres sur Internet :
 <p>Un système de recherche de livres qui permet aux utilisateurs de rechercher des livres en fonction de différents critères, tels que le genre ou le sujet.</p>
 <p>Des options de livraison qui permettent aux utilisateurs de choisir comment ils souhaitent recevoir leur livre, par exemple par la poste ou en point relais.</p>
+<p>Le compte utilisateur pourrait être implémenté de fonctionnalités tels que historique d'achats, de recevoir des recommandations de livres et de bénéficier de réductions exclusives.</p>
 </p>
 
 
 
 
-<p align="left">We used or we tried all of this</p>
+<p align="left">Nous avons utilisés ou essayés ces langages ou frameworks</p>
 
 
 
