@@ -1,17 +1,19 @@
 {% extends 'base.html.twig' %} {% block stylesheets %}
 {{ encore_entry_link_tags("app") }}
 <link rel="stylesheet" href="{{ asset('assets/css/home.css') }}" />
+<link rel="stylesheet" href="{{asset('assets/css/homemobile.css')}}"media="screen and (max-width: 576px)">
 {% endblock %} {% block title %}Avez vous 18ans?{% endblock %} {% block body %}
 <div class="full">
   <div class="baci">
-    <div>
+    <h4>
     Le mode tout public est activé si vous voulez acceder à tout notre site nous devons verifié si vous avez plus de 18 ans 
-    </div>
+    </h4>
     <div>
-      <button type="submit" id="green">
+      
+      <button class="btn btn-success my-2 my-sm-0"type="submit" >
         <a href="{{ path('app_register') }}">Oui même si c'est pas vrai</a>
       </button>
-      <button type="submit" id="red">
+      <button class="btn btn-danger my-2 my-sm-0" type="submit" id="red">
         <a href="{{ path('home') }}">Oh bah non</a>
       </button>
     </div>
