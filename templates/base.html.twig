@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/font.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/stylemobile.css')}}"media="screen and (max-width: 576px)">
     {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
     {% block stylesheets %}
     
@@ -101,19 +102,18 @@
     </header>  
 
     {% block body %} {% endblock %}
-    <div id="position">
-       
+
+
+    <div id="position">   
             <div class="footer">
-            <a href="{{path('cgu')}}">Mentions légales/CGU/CGV</a>  
-           
-             <a href="{{path('about')}}">About</a>
-            <p>Nous suivre : 
-             <a href="http://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
-             <a href="http://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
-             <a href="http://www.twitter.com"><i class="fa-brands fa-twitter"></i></a></p> 
-            
-        </div> 
-        
+                <a href="{{path('cgu')}}">Mentions légales/CGU/CGV</a>  
+                <a href="{{path('about')}}">About</a>
+                <p>Nous suivre : 
+                    <a href="http://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="http://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="http://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                </p> 
+            </div>   
     </div>
 </body>
 
