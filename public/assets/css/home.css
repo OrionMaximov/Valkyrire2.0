@@ -37,11 +37,6 @@
     width: auto;
 }
 
-
-#slider {
-    position: relative;
-}
-
 #prev,
 #next {
     position: absolute;
