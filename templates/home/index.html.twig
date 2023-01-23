@@ -2,7 +2,9 @@
 
 {% block stylesheets %}
 {{ encore_entry_link_tags('app') }}
+
 <link rel="stylesheet" href="{{asset('assets/css/home.css')}}">
+<link rel="stylesheet" href="{{asset('assets/css/homemobile.css')}}"media="screen and (max-width: 576px)">
 {% endblock %}
 
 {% block javascripts %}

@@ -36,7 +36,6 @@
     max-height: 400px;
     width: auto;
 }
-
 #prev,
 #next {
     position: absolute;
@@ -66,7 +65,7 @@ h2{
     
 }
 .baci{
-    height: 50vh;
+    height: 90vh;
     width: 100%;
     background-image: url(../image/noustevoyons.jpg);
     background-position: center;
@@ -88,6 +87,8 @@ h2{
     color: white;
     border: 3px;
     border-color: blue;
+
+
 }
 #red{
     background-color: red;
@@ -104,5 +105,5 @@ h2{
    max-height: 400px;
    max-width:300px;
 }
-/* @media height 300px et changé le width */
+
 

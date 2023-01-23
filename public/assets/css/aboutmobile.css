@@ -1,0 +1,17 @@
+.bodz{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem auto;
+      width: 100%;
+}
+.taille{
+   width: 80%;
+    margin: 1rem auto; 
+}
+.large{
+    background-image: url(../image/background-portrait.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto; 
+    margin: 1rem 0;
+}

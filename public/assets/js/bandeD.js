@@ -47,7 +47,7 @@ const photos2 = document.querySelector(".bandeD");
             "click",
             () => {
                 frameimg2.style.display = "flex";
-
+                
                 imgFull2[n] = document.createElement("img");
                 imgFull2[n].width = 500;
                 imgFull2[n].height = 700;
