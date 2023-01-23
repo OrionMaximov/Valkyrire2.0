@@ -36,12 +36,6 @@
     max-height: 400px;
     width: auto;
 }
-
-
-#slider {
-    position: relative;
-}
-
 #prev,
 #next {
     position: absolute;
@@ -109,5 +103,5 @@ h2{
    max-height: 400px;
    max-width:300px;
 }
-/* @media height 300px et changé le width */
+
 

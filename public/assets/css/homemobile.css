@@ -1,0 +1,15 @@
+/* @media height 300px et changé le width */
+
+.bandeD img,.comic img,.mangas img {
+        min-height:200px ;
+        max-height: 200px;
+        min-width:125px;
+}
+.banniere{
+        height: 50vh;
+}
+
+.carousel1 img{
+        max-height: 200px;
+        width: auto;
+}
