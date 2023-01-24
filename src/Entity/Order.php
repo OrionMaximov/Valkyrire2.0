@@ -2,6 +2,7 @@
 
 namespace App\Entity;
 
+use App\Factory\OrderFactory;
 use Doctrine\ORM\Mapping as ORM;
 use App\Repository\OrderRepository;
 use Doctrine\Common\Collections\Collection;
@@ -103,8 +104,6 @@ class Order
 
         return $this;
     }
-
-    
 
     public function getStatus(): ?string
     {

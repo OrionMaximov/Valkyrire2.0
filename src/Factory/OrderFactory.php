@@ -43,4 +43,22 @@ class OrderFactory
 
         return $livre;
     }
+
+    /**
+     * Removes an OrderItem associated with a livres from the database.
+     *
+     * @param livres $livres
+     *
+     * @return void
+     */
+    public function removeLivre(livres $livres): void
+    {
+        $entityManager = $this->getDoctrine()->getManager();
+        $orderItem = $entityManager->getRepository(OrderItem::class)->findOneBy(['livres' => $livres]);
+        dd($orderItem);
+        if ($orderItem) {
+            $entityManager->remove($orderItem);
+            $entityManager->flush();
+        }
+    }
 }
