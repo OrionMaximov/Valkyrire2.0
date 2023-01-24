@@ -37,7 +37,7 @@
 <h2>II. FONCTIONNALITES  EN PLACE</h2>
 <p>Voici quelques fonctionnalités que nous avons mis en place pour le site de vente de livres sur Internet :
 <p>Un compte utilisateur qui permet aux utilisateurs de créer un compte sur le site.</p>
-<p>Un panier d'achat qui permet aux utilisateurs d'ajouter des livres à leur panier et de finaliser leur achat en une seule transaction.(à Modifier le remove bug)</p>
+<p>Un panier d'achat qui permet aux utilisateurs d'ajouter des livres à leur panier et de finaliser leur achat en une seule transaction.</p>
 <p>Un système de recherche de livres qui permet aux utilisateurs de rechercher des livres en fonction de différents critères, tels que le titre, l'auteur.</p>
 <p>Un système de paiement sécurisé qui permet aux utilisateurs de payer en toute sécurité en utilisant leur carte de crédit ou un autre moyen de paiement en ligne.</p>
 <p>Un service client qui permet aux utilisateurs de poser des questions et de résoudre tout problème lié à leur achat de livres en ligne.</p>

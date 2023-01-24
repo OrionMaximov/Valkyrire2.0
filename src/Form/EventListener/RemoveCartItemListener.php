@@ -7,6 +7,7 @@ use App\Entity\Order;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\Form\FormEvent;
 use Symfony\Component\Form\FormEvents;
+use Doctrine\ORM\EntityManagerInterface;
 
 /**
  * Class RemoveCartItemListener
@@ -14,6 +15,13 @@ use Symfony\Component\Form\FormEvents;
  */
 class RemoveCartItemListener implements EventSubscriberInterface
 {
+    private $entityManager;
+
+    public function __construct(EntityManagerInterface $entityManager)
+    {
+        $this->entityManager = $entityManager;
+    }
+
     /**
      * @inheritDoc
      */
@@ -21,6 +29,8 @@ class RemoveCartItemListener implements EventSubscriberInterface
     {
         return [FormEvents::POST_SUBMIT => 'postSubmit'];
     }
+
+    
 
     /**
      * Removes livres from the cart based on the data sent from the user.
@@ -40,8 +50,9 @@ class RemoveCartItemListener implements EventSubscriberInterface
         foreach ($form->get('items')->all() as $child) {
             if ($child->get('remove')->isClicked()) {
                
-                $cart->removeItems($child->getData()); 
-                
+                $orderItem = $child->getData();
+                $cart->removeItems($orderItem); 
+                $this->entityManager->flush();
                 break;
             }
         }

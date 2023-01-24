@@ -57,7 +57,7 @@ class OrderFactory
         $orderItem = $entityManager->getRepository(OrderItem::class)->findOneBy(['livres' => $livres]);
         dd($orderItem);
         if ($orderItem) {
-            $entityManager->remove($orderItem);
+            $entityManager->removeItems($orderItem);
             $entityManager->flush();
         }
     }
