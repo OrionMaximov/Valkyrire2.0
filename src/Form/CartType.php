@@ -7,6 +7,7 @@ use DateTimeInterface;
 use App\Storage\CartSessionStorage;
 use Doctrine\DBAL\Types\DateTimeType;
 use Symfony\Component\Form\FormEvents;
+use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\Form\AbstractType;
 use App\Form\EventListener\ClearCartListener;
 use Symfony\Component\Form\FormBuilderInterface;
@@ -18,8 +19,15 @@ use Symfony\Component\Form\Extension\Core\Type\CollectionType;
 
 class CartType extends AbstractType
 {
+    private $entityManager;
+
+    public function __construct(EntityManagerInterface $entityManager)
+    {
+        $this->entityManager = $entityManager;
+    }
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
+        
         $builder
             
             //->add('creeAt',DateType::class)
@@ -31,7 +39,8 @@ class CartType extends AbstractType
             ->add('clear', SubmitType::class);
 
            
-            $builder->addEventSubscriber(new RemoveCartItemListener());
+            $listener = new RemoveCartItemListener($this->entityManager);
+            $builder->addEventSubscriber($listener);
             $builder->addEventSubscriber(new ClearCartListener());
     }
 
