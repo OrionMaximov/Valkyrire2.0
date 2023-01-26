@@ -9,22 +9,22 @@ const prev3 = document.getElementById("prev3");
 const next3 = document.getElementById("next3");
 
 const urlImg = [
-    "assets/image/covers/comic/spawn.jpg",
-    "assets/image/covers/bandeD/Elfes.jpg",
-    "assets/image/covers/mangas/one-piece.jpeg",
+    "assets/image/covers/Comic/spawn.jpg",
+    "assets/image/covers/BandeD/Elfes.jpg",
+    "assets/image/covers/Mangas/one-piece.jpeg",
 ];
-/* const urlImg2 = [
-    "./assets/image/covers/bandeD/Elfes.jpg",
-    "./assets/image/covers/mangas/one-piece.jpeg",
-    "./assets/image/covers/comic/spawn.jpg",
+const urlImg2 = [
+    "./assets/image/covers/BandeD/Elfes.jpg",
+    "./assets/image/covers/Mangas/one-piece.jpeg",
+    "./assets/image/covers/Comic/spawn.jpg",
 ];
 const urlImg3 = [
     
-    "./assets/image/covers/mangas/one-piece.jpeg",
-    "./assets/image/covers/comic/spawn.jpg",
-    "./assets/image/covers/bandeD/Elfes.jpg",
+    "./assets/image/covers/Mangas/one-piece.jpeg",
+    "./assets/image/covers/Comic/spawn.jpg",
+    "./assets/image/covers/BandeD/Elfes.jpg",
     
-]; */
+]; 
 // 1ere étape : je déclare un index
 let i = 0;
 let j = 0;
