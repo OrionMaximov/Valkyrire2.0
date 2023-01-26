@@ -23,7 +23,7 @@
     object-fit: cover;
     object-position: 100% 0;
 }
-.carousel1 {
+#carousel{
     margin: 0;
     display: flex;
     justify-content: space-around;
@@ -32,7 +32,7 @@
     
 }
 
-.carousel1 img{
+#carousel img{
     max-height: 400px;
     width: auto;
 }

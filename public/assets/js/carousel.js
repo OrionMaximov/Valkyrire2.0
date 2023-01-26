@@ -1,6 +1,8 @@
-const sliderImg = document.querySelector("#slider img");
-const sliderImg2 = document.querySelector("#slider2 img");
-const sliderImg3 = document.querySelector("#slider3 img");
+const carousel = document.getElementById("carousel");
+const sliderImg = carousel.getElementsByTagName("img");
+const firstImg = document.querySelector("#carousel #slider img");
+const secondImg = document.querySelector("#carousel #slider2 img");
+const thirdImg = document.querySelector("#carousel #slider3 img");
 const prev = document.getElementById("prev");
 const next = document.getElementById("next");
 const prev2 = document.getElementById("prev2");
@@ -9,29 +11,29 @@ const prev3 = document.getElementById("prev3");
 const next3 = document.getElementById("next3");
 
 const urlImg = [
-    "assets/image/covers/Comic/spawn.jpg",
+    "assets/image/covers/Comic/Spawn.jpg",
     "assets/image/covers/BandeD/Elfes.jpg",
     "assets/image/covers/Mangas/one-piece.jpeg",
 ];
 const urlImg2 = [
-    "./assets/image/covers/BandeD/Elfes.jpg",
-    "./assets/image/covers/Mangas/one-piece.jpeg",
-    "./assets/image/covers/Comic/spawn.jpg",
+    "assets/image/covers/BandeD/Elfes.jpg",
+    "assets/image/covers/Mangas/one-piece.jpeg",
+    "assets/image/covers/Comic/Spawn.jpg",
 ];
 const urlImg3 = [
     
-    "./assets/image/covers/Mangas/one-piece.jpeg",
-    "./assets/image/covers/Comic/spawn.jpg",
-    "./assets/image/covers/BandeD/Elfes.jpg",
+    "assets/image/covers/Mangas/one-piece.jpeg",
+    "assets/image/covers/Comic/Spawn.jpg",
+    "assets/image/covers/BandeD/Elfes.jpg",
     
 ]; 
 // 1ere étape : je déclare un index
 let i = 0;
 let j = 0;
 let k = 0;
-sliderImg.src = urlImg[i] ;
-sliderImg2.src= urlImg2[j];
-sliderImg3.src= urlImg3[k];
+firstImg.src = urlImg[0];
+secondImg.src = urlImg[1];
+thirdImg.src = urlImg[2];
 
 next.addEventListener(
     "click",
@@ -40,13 +42,13 @@ next.addEventListener(
         // 3eme étape : limité index à la taille de mon tableau -1
         if(i === urlImg.length-1){
             i = 0;
-            sliderImg.src = urlImg[i];
+            firstImg.src = urlImg[i];
         }else{
             // 2nd étape : j'incrémente mon index
         //i = i+1;
         i++; //incrémentation
         // je dois réaffecter src avec la nouvelle valeur de i
-            sliderImg.src = urlImg[i];
+            firstImg.src = urlImg[i];
     }
 }
 )
@@ -55,10 +57,10 @@ prev.addEventListener(
     function() {
         if (i === 0) {
             i = urlImg.length-1;
-            sliderImg.src = urlImg[i];
+            firstImg.src = urlImg[i];
         }else{
             i--;
-            sliderImg.src = urlImg[i];
+            firstImg.src = urlImg[i];
         }
     }
 )
@@ -67,10 +69,10 @@ setInterval(
         if(i === urlImg.length-1){
             i = 0;
 
-            sliderImg.src = urlImg[i];
+            firstImg.src = urlImg[i];
         }else{
         i++; 
-            sliderImg.src = urlImg[i];
+            firstImg.src = urlImg[i];
     }
     },
     4000
@@ -80,10 +82,10 @@ setInterval(
         if(j === urlImg2.length-1){
             j = 0;
             
-            sliderImg2.src = urlImg2[j];
+            secondImg.src = urlImg2[j];
         }else{
         j++; 
-            sliderImg2.src = urlImg2[j];
+            secondImg.src = urlImg2[j];
     }
     },
     4000
@@ -93,10 +95,10 @@ setInterval(
         if(k === urlImg3.length-1){
             k = 0;
             
-            sliderImg3.src = urlImg3[k];
+            thirdImg.src = urlImg3[k];
         }else{
         k++; 
-            sliderImg3.src = urlImg3[k];
+            thirdImg.src = urlImg3[k];
     }
     },
     4000
