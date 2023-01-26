@@ -70,9 +70,10 @@ class LivresRepository extends ServiceEntityRepository
             $qb->where('search.titre LIKE :query')
                 ->orWhere('search.auteur LIKE :query')
                 ->setParameter('query', '%'.$query.'%');
-            dump($qb->getDQL());
-            return $qb->getQuery()->getResult();
+            $query= $qb->getQuery()->getResult();
+            return $query;
     }
+
     public function findByGenres($value)
     {
         return $this->createQueryBuilder('l')

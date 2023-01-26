@@ -85,6 +85,7 @@ class HomeController extends AbstractController
         $livre=$doctrine->getRepository(Livres::class);
         $books = $livre->searchBooks($query);
         $books = array_slice($books, 0, 15);
+       
         return $this->json($books);
     }
 }
