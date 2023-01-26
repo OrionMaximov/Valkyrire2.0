@@ -1,13 +1,13 @@
 const photos2 = document.querySelector(".bandeD");
     const tabphotos2 = [
-        "assets/image/covers/bandeD/Conquêtes.jpg",
-        "assets/image/covers/bandeD/Miss Shaolin.jpg",
-        "assets/image/covers/bandeD/Elfes.jpg",
-        "assets/image/covers/bandeD/Hawkmoon.jpg",
-        "assets/image/covers/bandeD/Lanfeust de troy.jpg",
-        "assets/image/covers/bandeD/Thorgal.jpg",
-        "assets/image/covers/bandeD/Le donjon de Naheulbeuk.jpg",
-        "assets/image/covers/bandeD/Le scrameustache.jpg",
+        "assets/image/covers/BandeD/Conquêtes.jpg",
+        "assets/image/covers/BandeD/Miss Shaolin.jpg",
+        "assets/image/covers/BandeD/Elfes.jpg",
+        "assets/image/covers/BandeD/Hawkmoon.jpg",
+        "assets/image/covers/BandeD/Lanfeust de troy.jpg",
+        "assets/image/covers/BandeD/Thorgal.jpg",
+        "assets/image/covers/BandeD/Le donjon de Naheulbeuk.jpg",
+        "assets/image/covers/BandeD/Le scrameustache.jpg",
     ];
     const imgFull2 = [];
     const frameimg2 = document.createElement("div");
