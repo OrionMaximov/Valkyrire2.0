@@ -1,4 +1,3 @@
-
   jQuery(document).ready(function($) {
     $("#searchBar").submit(function(e) {
         e.preventDefault();

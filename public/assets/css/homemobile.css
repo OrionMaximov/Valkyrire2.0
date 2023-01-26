@@ -9,7 +9,7 @@
         height: 50vh;
 }
 
-.carousel1 img{
+#carousel img{
         max-height: 200px;
         width: auto;
 }
