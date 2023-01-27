@@ -24,9 +24,9 @@
     color: black;
     margin: 1rem auto;
     top: 60px; /* 60px est la hauteur de ta barre de recherche */
-    left:62rem;
-    overflow: auto;
-    
+    left:72%;
+    overflow: auto;   
+    border-radius: 10px 10px 10px 10px;
 }
 
 #navbarColor02 ul{
@@ -69,4 +69,11 @@
     max-width: 350px;
     margin: 1rem auto; 
 }
+
+.demoSite{
+    color: black;
+    z-index: 1;
+    text-align: center;
+}
+
 
