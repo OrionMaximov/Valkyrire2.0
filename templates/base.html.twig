@@ -65,7 +65,7 @@
                         <a class="nav-link" href=" {{ path('admin') }}">Admin</a></li>
                         {% endif %}
                         <li class="nav-item">
-                        <a class="nav-link" href="{{ path('app_logout') }}">Deconnexion</a></li>
+                        <a class="nav-link" href="{{ path('app_logout') }}">Deconnexion {{ app.user.nom}} {{ app.user.prenom}}</a></li>
                         {%else%}
                             <li class="nav-item">
                                 <a class="nav-link" href="{{path ('app_login')}}">Connexion</a>
@@ -94,7 +94,7 @@
                 </div>
             </div>
             <div class="navbar-nav">
-                <a href="{{ path('cart') }}" class="btn btn-light">
+                <a href="{{ path('cart') }}" class="btn btn-light panpos">
                     Panier
                 </a>
             </div>
