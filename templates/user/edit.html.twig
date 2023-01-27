@@ -1,5 +1,12 @@
 {% extends 'base.html.twig' %}
 
+{% block stylesheets %}
+{{ encore_entry_link_tags("app") }}
+<link rel="stylesheet" href="{{ asset('assets/css/home.css') }}" />
+<link rel="stylesheet" href="{{asset('assets/css/homemobile.css')}}"media="screen and (max-width: 576px)">
+<link rel="stylesheet" href="{{ asset('assets/css/footerpos.css') }}" />
+{% endblock %} 
+
 {% block title %}Changement date de Naissance{% endblock %}
 
 {% block body %}
@@ -7,7 +14,6 @@
 
     {{ include('user/_form.html.twig', {'button_label': 'Changer'}) }}
 
-    
+{# voir plus tard pour que les user puissent modifié leur profil #}    
 
-    
 {% endblock %}

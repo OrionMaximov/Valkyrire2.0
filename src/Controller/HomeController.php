@@ -88,4 +88,13 @@ class HomeController extends AbstractController
        
         return $this->json($books);
     }
+
+    /* function a ajouté plus tard pour l'actualisation de l'edit user 
+
+     * @Route("/deco", name="app_user_deco")
+     
+    public function deco(): Response
+    {
+        return $this->redirectToRoute('home');
+    } */
 }

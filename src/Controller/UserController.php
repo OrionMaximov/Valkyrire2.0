@@ -5,6 +5,7 @@ namespace App\Controller;
 use App\Entity\User;
 use App\Form\UserType;
 use App\Repository\UserRepository;
+use Doctrine\Persistence\ManagerRegistry;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -60,15 +61,29 @@ class UserController extends AbstractController
     /**
      * @Route("/{id}/edit", name="app_user_edit", methods={"GET", "POST"})
      */
-    public function edit(Request $request, User $user, UserRepository $userRepository): Response
+    public function edit(ManagerRegistry $doctrine,Request $request, User $user, UserRepository $userRepository): Response
     {
         $form = $this->createForm(UserType::class, $user);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
             $userRepository->add($user, true);
+            $date = $user->getBirthat();
+                    $dateNaissance = $date->format('Y-m-d');
 
-            return $this->redirectToRoute('home', [], Response::HTTP_SEE_OTHER);
+                    $aujourdhui = date("Y-m-d");
+                    $diff = date_diff(date_create($dateNaissance), date_create($aujourdhui));
+            if ($diff->format("%y") <= "18" ) {
+                $user->setRoles(['ROLE_USER']);
+            } else {
+                
+                $user->setRoles(['ROLE_PERVERS']);
+                $user->removeRoles('ROLE_USER');
+            }
+            $om=$doctrine->getManager();
+            $om->persist($user);
+            $om->flush();
+            return $this->redirectToRoute('home', [], Response::HTTP_SEE_OTHER); // le redirect sera fait sur app_user_deco
         }
 
         return $this->renderForm('user/edit.html.twig', [
@@ -88,6 +103,8 @@ class UserController extends AbstractController
 
         return $this->redirectToRoute('app_user_index', [], Response::HTTP_SEE_OTHER);
     }
+    
+    
 
     
 }
