@@ -15,18 +15,18 @@
     Le mode tout public est activé si vous voulez acceder à tout notre site nous devons verifié si vous avez plus de 18 ans 
     </h4>
     <div>
-      {% if "is_granted('IS_AUTHENTICATED')" %}
+      {# {% if "is_granted('IS_AUTHENTICATED')" %}
       <button class="btn btn-success my-2 my-sm-0"type="submit" >
         <a href="{{ path('app_user_edit', {'id': app.user.id})}}">Oui même si c'est pas vrai</a>
       </button>
-      {% else %}
+      {% else %} #}
       <button class="btn btn-success my-2 my-sm-0"type="submit" >
         <a href="{{ path('app_register')}}">Oui même si c'est pas vrai</a>
       </button>
       <button class="btn btn-danger my-2 my-sm-0" type="submit" id="red">
         <a href="{{ path('home') }}">Oh bah non</a>
       </button>
-      {% endif %}
+      {# {% endif %} #}
     </div>
   </div>
 </div>

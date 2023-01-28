@@ -4,7 +4,7 @@ namespace App\Form;
 
 use App\Entity\User;
 
-use Doctrine\DBAL\Types\StringType;
+
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\Validator\Constraints\IsTrue;
@@ -23,12 +23,12 @@ class RegistrationFormType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
-            ->add('nom',StringType::class)
-            ->add('prenom',StringType::class)
+            ->add('nom')
+            ->add('prenom')
             ->add('email', EmailType::class)
             ->add('birthat',DateType::class, ['widget'=>'single_text'])
-            ->add('adresse',StringType::class)
-            ->add('ville',StringType::class)
+            ->add('adresse')
+            ->add('ville')
             ->add('codePostale',IntegerType::class)
             ->add('telephone',IntegerType::class)           
             ->add('agreeTerms', CheckboxType::class, [

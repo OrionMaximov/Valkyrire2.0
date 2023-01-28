@@ -1,4 +1,11 @@
 {% extends 'base.html.twig' %}
+{% block stylesheets %}
+{{ encore_entry_link_tags("app") }}
+<link rel="stylesheet" href="{{ asset('assets/css/home.css') }}" />
+<link rel="stylesheet" href="{{asset('assets/css/homemobile.css')}}"media="screen and (max-width: 576px)">
+<link rel="stylesheet" href="{{ asset('assets/css/footerpos.css') }}" />
+{% endblock %} 
+
 
 {% block title %}Mot de passe oublié{% endblock %}
 
@@ -7,7 +14,7 @@
         <div class="alert alert-danger" role="alert">{{ flash_error }}</div>
     {% endfor %}
     <h3>Reset mot de passe</h3>
-
+<div class="container">
     {{ form_start(requestForm) }}
         {{ form_row(requestForm.email) }}
         <div>
@@ -16,6 +23,7 @@
             </small>
         </div>
 
-        <button class="btn btn-primary">oublie du mot de passe</button>
+        <button class="btn btn-primary">Oublie du mot de passe</button>
     {{ form_end(requestForm) }}
+</div>
 {% endblock %}
